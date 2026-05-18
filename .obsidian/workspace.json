@@ -1,0 +1,277 @@
+{
+  "main": {
+    "id": "b3ac11108ad9e767",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6a3768b72017d55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "486280505e615671",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/Problems/CP00002.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CP00002"
+            }
+          },
+          {
+            "id": "b82bb152af2b2489",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/Problems/CP00001.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CP00001"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ced9a2f975cfa0bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "9be6cc166066edf3",
+        "type": "tabs",
+        "dimension": 69.43734015345268,
+        "children": [
+          {
+            "id": "489f4d3f366be6c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cb33ab473063bba2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "path:\"Code/Exercise/Algorithm List\" line:(bội)",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2d00f09aff17d20b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fe512a036d778c5b",
+        "type": "tabs",
+        "dimension": 30.562659846547312,
+        "children": [
+          {
+            "id": "32f4b620aa009359",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 258.5
+  },
+  "right": {
+    "id": "fd74f8de419a26a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1ddb34522942129",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e240bffe28a901f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Code/CP things/Problems/CP00002.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CP00002"
+            }
+          },
+          {
+            "id": "9f526fb708771cf4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "52d2a3ce2e27348d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      },
+      {
+        "id": "3811e75055405f81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14e0d7558b01b473",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Code/CP things/Problems/CP00002.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CP00002"
+            }
+          },
+          {
+            "id": "74b960e903a289ce",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Code/CP things/Problems/CP00002.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CP00002"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "74b960e903a289ce",
+  "lastOpenFiles": [
+    "Pasted image 20260518150130.png",
+    "ADMIN/IMAGE/Pasted image 20260518145944.png",
+    "Code/CP things/Problems/CP00001.md",
+    "Code/CP things/Problems/CP00002.md",
+    "Code/CP things/Problems/CP00000 - CP problems.md",
+    "Code/CP things/CP.md",
+    "Code/CP things/Algorithm logic/Xử lí bit.md",
+    "Code/CP things/Algorithm logic/Algorithm.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
+    "Code/Code.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
+    "Math/Linear Algebra/Linear Algebra.md",
+    "Code/CP things",
+    "Math/Linear Algebra",
+    "Văn/Đề/01052026.md",
+    "Code/CP things/Algorithm logic/Loop/Loop.md",
+    "Code/CP things/Problems",
+    "Code/Algorithm logic/Loop/Recursive.md",
+    "Code/CP things/Algorithm logic/Loop",
+    "ADMIN/Undone.md",
+    "Code/Algorithm logic/Brute-Force.md",
+    "Algorithm Base.base",
+    "Code/Algorithm logic/Choose Algorithm.canvas",
+    "Math/Modulo/Số học modulo.md",
+    "Math/Số học modulo/Untitled.md",
+    "Math/Boolean Algebra/Boolean Algebra.md",
+    "Code/Algorithm logic/Binary.md",
+    "ADMIN/IMAGE/Pasted image 20260503093250.png",
+    "Code/CP things/Algorithm logic/Dynamic Programming/desktop.ini",
+    "Math/Boolean Algebra/desktop.ini",
+    "Math/Boolean Algebra",
+    "Code/Algorithm logic/Recursive.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming",
+    "Code/Algorithm logic/Dynamic Programming.md",
+    "Văn/Đề/desktop.ini",
+    "Văn/Văn chương.md",
+    "Code/Exercise/Leetcode.md",
+    "Literature/Untitled.md",
+    "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
+    "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
+    "Code/Exercise/NHPOJ/A2K36 Class/Đếm hoán vị.md",
+    "ADMIN/IMAGE/Pasted image 20260420180722.png",
+    "ADMIN/IMAGE/Pasted image 20260420180610.png",
+    "ADMIN/IMAGE/Pasted image 20260418193633.png",
+    "ADMIN/IMAGE/Pasted image 20251204191724.png",
+    "Pasted image 20251204191723.png",
+    "IMAGE/Pasted image 20251204191723.png"
+  ]
+}

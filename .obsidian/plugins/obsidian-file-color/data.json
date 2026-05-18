@@ -1,0 +1,53 @@
+{
+  "cascadeColors": false,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "yCrVOfbvgNNcOxz2V8EhB",
+      "name": "Math",
+      "value": "#009afa"
+    },
+    {
+      "id": "OeyYq2GoY7fkYWfVztjQ6",
+      "name": "Code",
+      "value": "#0f15bd"
+    },
+    {
+      "id": "vGUdCNQFLY_mgJ7efnXbc",
+      "name": "Physic",
+      "value": "#00ffbf"
+    },
+    {
+      "id": "FK-19mVIAMuuh4I37n964",
+      "name": "History",
+      "value": "#ff0000"
+    },
+    {
+      "id": "hlzG5ajgDo9t-Nq7V8tw5",
+      "name": "Literature",
+      "value": "#26fd51"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Math",
+      "color": "yCrVOfbvgNNcOxz2V8EhB"
+    },
+    {
+      "path": "Code",
+      "color": "OeyYq2GoY7fkYWfVztjQ6"
+    },
+    {
+      "path": "Physic",
+      "color": "vGUdCNQFLY_mgJ7efnXbc"
+    },
+    {
+      "path": "History",
+      "color": "FK-19mVIAMuuh4I37n964"
+    },
+    {
+      "path": "Văn",
+      "color": "hlzG5ajgDo9t-Nq7V8tw5"
+    }
+  ]
+}

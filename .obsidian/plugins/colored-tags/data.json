@@ -1,0 +1,34 @@
+{
+  "palette": {
+    "seed": 0,
+    "selected": "adaptive-soft",
+    "custom": "e12729-f37324-f8cc1b-72b043-007f4e"
+  },
+  "mixColors": true,
+  "transition": true,
+  "accessibility": {
+    "highTextContrast": false
+  },
+  "knownTags": {
+    "algorithm": 6,
+    "code": 5,
+    "concept": 2,
+    "cptags": 12,
+    "literature": 11,
+    "math": 3,
+    "physic": 7,
+    "vector": 1,
+    "algorithm/bitwise": 2,
+    "algorithm/dp-bitmask": 4,
+    "algorithm/dynaminc-programming": 3,
+    "cptags/binary": 3,
+    "cptags/dp": 4,
+    "cptags/dp-bitmask": 2,
+    "cptags/math": 1,
+    "literature/story": 1,
+    "math/binary": 1,
+    "cptags/dp-bitmask/dp-brokenprofile": 1
+  },
+  "tagColors": {},
+  "_version": 4
+}
