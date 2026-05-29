@@ -3,5 +3,6 @@
   "readableLineLength": true,
   "showLineNumber": false,
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "ADMIN/IMAGE"
 }

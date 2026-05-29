@@ -1,4 +1,4 @@
-#algorithm  
+#algorithm #concept 
 
 - Những thuật toán phức tạp luôn xoay quanh việc tối ưu những vòng lặp
 

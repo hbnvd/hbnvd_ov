@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Problems/CP00002.md",
+                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CP00002"
+              "title": "Prefix Sum & Different Array"
             }
           },
           {
@@ -27,12 +27,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Problems/CP00001.md",
+                "file": "Code/CP things/Problems/CP00003.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CP00001"
+              "title": "CP00003"
+            }
+          },
+          {
+            "id": "3e093d618d5cac77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/CP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CP"
+            }
+          },
+          {
+            "id": "b0411601ea9335c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/Algorithm logic/Xử lí bit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Xử lí bit"
             }
           }
         ]
@@ -68,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"Code/Exercise/Algorithm List\" line:(bội)",
+                "query": "tag:#CPtags ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -128,12 +156,27 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/CP things/Problems/CP00002.md",
+                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from CP00002"
+              "title": "Outgoing links from Prefix Sum & Different Array"
+            }
+          },
+          {
+            "id": "74b960e903a289ce",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Prefix Sum & Different Array"
             }
           },
           {
@@ -165,7 +208,8 @@
               "title": "All properties"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3811e75055405f81",
@@ -177,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/CP things/Problems/CP00002.md",
+                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,26 +231,10 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for CP00002"
-            }
-          },
-          {
-            "id": "74b960e903a289ce",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Code/CP things/Problems/CP00002.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of CP00002"
+              "title": "Backlinks for Prefix Sum & Different Array"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -224,28 +252,37 @@
       "bases:Create new base": false
     }
   },
-  "active": "74b960e903a289ce",
+  "active": "486280505e615671",
   "lastOpenFiles": [
-    "Pasted image 20260518150130.png",
-    "ADMIN/IMAGE/Pasted image 20260518145944.png",
-    "Code/CP things/Problems/CP00001.md",
-    "Code/CP things/Problems/CP00002.md",
-    "Code/CP things/Problems/CP00000 - CP problems.md",
+    "New Text Document.txt",
+    "ADMIN/IMAGE/Pasted image 20260529171339.png",
+    "Code/CP things/Problems/CP00003.md",
+    "ADMIN/MOCs.md",
     "Code/CP things/CP.md",
+    "Code/Code.md",
+    "Code/CP things/Problems/CP00002.md",
+    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+    "Code/CP things/Problems/CP00001.md",
+    "Code/CP things/Algorithm logic/Graph/Graph.md",
+    "Code/CP things/Algorithm logic/Loop/Loop.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
+    "ADMIN/Undone.md",
     "Code/CP things/Algorithm logic/Xử lí bit.md",
     "Code/CP things/Algorithm logic/Algorithm.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
-    "Code/Code.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
+    "Code/CP things/Algorithm logic/DS/Untitled",
+    "Code/CP things/Algorithm logic/Data Structure",
+    "Code/CP things/Algorithm logic/Graph",
+    "Code/CP things/Problems/CP00000 - CP problems.md",
+    "ADMIN/IMAGE/Pasted image 20260518150130.png",
+    "ADMIN/IMAGE/Pasted image 20260518145944.png",
     "Math/Linear Algebra/Linear Algebra.md",
     "Code/CP things",
     "Math/Linear Algebra",
     "Văn/Đề/01052026.md",
-    "Code/CP things/Algorithm logic/Loop/Loop.md",
     "Code/CP things/Problems",
     "Code/Algorithm logic/Loop/Recursive.md",
     "Code/CP things/Algorithm logic/Loop",
-    "ADMIN/Undone.md",
     "Code/Algorithm logic/Brute-Force.md",
     "Algorithm Base.base",
     "Code/Algorithm logic/Choose Algorithm.canvas",
@@ -256,22 +293,13 @@
     "ADMIN/IMAGE/Pasted image 20260503093250.png",
     "Code/CP things/Algorithm logic/Dynamic Programming/desktop.ini",
     "Math/Boolean Algebra/desktop.ini",
-    "Math/Boolean Algebra",
     "Code/Algorithm logic/Recursive.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming",
     "Code/Algorithm logic/Dynamic Programming.md",
-    "Văn/Đề/desktop.ini",
-    "Văn/Văn chương.md",
-    "Code/Exercise/Leetcode.md",
-    "Literature/Untitled.md",
     "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
     "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
-    "Code/Exercise/NHPOJ/A2K36 Class/Đếm hoán vị.md",
     "ADMIN/IMAGE/Pasted image 20260420180722.png",
     "ADMIN/IMAGE/Pasted image 20260420180610.png",
     "ADMIN/IMAGE/Pasted image 20260418193633.png",
-    "ADMIN/IMAGE/Pasted image 20251204191724.png",
-    "Pasted image 20251204191723.png",
-    "IMAGE/Pasted image 20251204191723.png"
+    "ADMIN/IMAGE/Pasted image 20251204191724.png"
   ]
 }

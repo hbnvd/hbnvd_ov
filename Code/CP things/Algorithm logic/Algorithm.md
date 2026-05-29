@@ -1,4 +1,4 @@
-#code #algorithm #concept
+#algorithm #concept
 - **Giải thuật** là bộ môn giải quyết vấn đề,  có 4 loại:
 	1. Vét cạn (Brute - Force)
 		- Lặp

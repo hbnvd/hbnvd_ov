@@ -1,4 +1,4 @@
-#algorithm/dynaminc-programming #algorithm/bitwise #algorithm/dp-bitmask
+#algorithm/dynaminc-programming #algorithm/bitwise #algorithm/dp-bitmask #concept 
 
 
 - 1 dạng của [[Dynamic Programming]] chuyên về lưu giữ trạng thái đã chọn

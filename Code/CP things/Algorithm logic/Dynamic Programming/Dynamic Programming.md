@@ -1,3 +1,3 @@
-#algorithm/dynaminc-programming 
+#algorithm/dynaminc-programming #concept 
 
 - 1 kỹ thuật 
