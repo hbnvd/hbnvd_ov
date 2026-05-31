@@ -3,6 +3,7 @@
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 .obsidian/plugins/*/.obsidian/
+.obsidian/appearance.json
 # Chặn file rác hệ điều hành tự sinh
 .DS_Store
 Thumbs.db

@@ -1,7 +1,7 @@
 #CPtags 
 
 ---
-[[CP]]
+[[Code/CP things/CP]]
 
 ---
 

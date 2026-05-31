@@ -1,4 +1,4 @@
-#math/binary #algorithm/bitwise
+#math/binary #DSAbitwise
 
 - Xử lí bit giúp giải quyết 1 số vấn đề liên quan  tới [[DP bitmask]]
 - Liên quan tới [[Boolean Algebra]] và hệ nhị phân

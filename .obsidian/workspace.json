@@ -8,62 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "486280505e615671",
+            "id": "e6539e6440c1c83d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+                "file": "Math/Boolean Algebra/Boolean Algebra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prefix Sum & Different Array"
+              "title": "Boolean Algebra"
             }
           },
           {
-            "id": "b82bb152af2b2489",
+            "id": "628b5b69f19a584a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Problems/CP00003.md",
+                "file": "ADMIN/Undone.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CP00003"
+              "title": "Undone"
             }
           },
           {
-            "id": "3e093d618d5cac77",
+            "id": "e2a1c903662988b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/CP.md",
+                "file": "Learned/2026/Week 22.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CP"
-            }
-          },
-          {
-            "id": "b0411601ea9335c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/CP things/Algorithm logic/Xử lí bit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Xử lí bit"
+              "title": "Week 22"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CPtags ",
+                "query": "bit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,12 +143,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+                "file": "Code/CP things/Algorithm logic/Technics/Sliding window.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Prefix Sum & Different Array"
+              "title": "Outgoing links from Sliding window"
             }
           },
           {
@@ -170,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+                "file": "ADMIN/Undone.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Prefix Sum & Different Array"
+              "title": "Outline of Undone"
             }
           },
           {
@@ -221,7 +208,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+                "file": "ADMIN/Undone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +218,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Prefix Sum & Different Array"
+              "title": "Backlinks for Undone"
             }
           }
         ]
@@ -252,54 +239,56 @@
       "bases:Create new base": false
     }
   },
-  "active": "486280505e615671",
+  "active": "628b5b69f19a584a",
   "lastOpenFiles": [
-    "New Text Document.txt",
-    "ADMIN/IMAGE/Pasted image 20260529171339.png",
-    "Code/CP things/Problems/CP00003.md",
-    "ADMIN/MOCs.md",
-    "Code/CP things/CP.md",
-    "Code/Code.md",
-    "Code/CP things/Problems/CP00002.md",
-    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
-    "Code/CP things/Problems/CP00001.md",
-    "Code/CP things/Algorithm logic/Graph/Graph.md",
-    "Code/CP things/Algorithm logic/Loop/Loop.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
+    "Code/CP things/Problems/CP00008.md",
     "ADMIN/Undone.md",
-    "Code/CP things/Algorithm logic/Xử lí bit.md",
+    "Math/Boolean Algebra/Boolean Algebra.md",
+    "Code/CP things/Algorithm logic/Bit process.md",
+    "Code/CP things/Algorithm logic/Data Structure/Cpp some built-in Data Structure.md",
+    "Code/CP things/Algorithm logic/Technics/Two pointers.md",
+    "Learned/2026/Week 22.md",
+    "ADMIN/skibidi.md",
+    "ADMIN/Rules.md",
+    "Learned/2026/Week 23.md",
+    "Learned/2026",
+    "Code/CP things/Cách chọn alg phù hợp.canvas",
+    "Learned",
+    "Code/CP things/Bug thường gặp.canvas",
+    "Code/CP things/Algorithm logic/Technics/Sliding window.md",
+    "Code/CP things/Bug thường gặp.md",
+    "Code/CP things/Untitled",
+    "Code/CP things/Problems/CP00007.md",
+    "Code/CP things/Problems/CP00006.md",
+    "Code/CP things/Problems/CP00005.md",
+    "Code/CP things/Problems/CP00003.md",
+    "Code/CP things/Problems/CP00004.md",
+    "Code/CP things/Problems/CP00000 - CP problems.md",
+    "Untitled.md",
+    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+    "Code/CP things/Algorithm logic/Technics",
+    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
     "Code/CP things/Algorithm logic/Algorithm.md",
+    "Code/CP things/Algorithm logic/Untitled.md",
+    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
+    "Code/CP things/Algorithm logic/Technics.md",
+    "Code/CP things/Algorithm logic/Loop/Loop.md",
+    "ADMIN/IMAGE/Pasted image 20260529204937.png",
+    "ADMIN/IMAGE/Pasted image 20260529203905.png",
+    "ADMIN/IMAGE/Pasted image 20260529203850.png",
+    "ADMIN/IMAGE/Pasted image 20260529203103.png",
+    "ADMIN/IMAGE/Pasted image 20260529203019.png",
+    "ADMIN/IMAGE/Pasted image 20260529202955.png",
+    "ADMIN/IMAGE/Pasted image 20260529202931.png",
+    "ADMIN/IMAGE/Pasted image 20260529202920.png",
+    "ADMIN/IMAGE/Pasted image 20260529202912.png",
+    "ADMIN/IMAGE/Pasted image 20260529202904.png",
+    "New Text Document.txt",
     "Code/CP things/Algorithm logic/DS/Untitled",
     "Code/CP things/Algorithm logic/Data Structure",
     "Code/CP things/Algorithm logic/Graph",
-    "Code/CP things/Problems/CP00000 - CP problems.md",
-    "ADMIN/IMAGE/Pasted image 20260518150130.png",
-    "ADMIN/IMAGE/Pasted image 20260518145944.png",
-    "Math/Linear Algebra/Linear Algebra.md",
     "Code/CP things",
     "Math/Linear Algebra",
-    "Văn/Đề/01052026.md",
-    "Code/CP things/Problems",
-    "Code/Algorithm logic/Loop/Recursive.md",
-    "Code/CP things/Algorithm logic/Loop",
-    "Code/Algorithm logic/Brute-Force.md",
-    "Algorithm Base.base",
-    "Code/Algorithm logic/Choose Algorithm.canvas",
-    "Math/Modulo/Số học modulo.md",
-    "Math/Số học modulo/Untitled.md",
-    "Math/Boolean Algebra/Boolean Algebra.md",
-    "Code/Algorithm logic/Binary.md",
-    "ADMIN/IMAGE/Pasted image 20260503093250.png",
-    "Code/CP things/Algorithm logic/Dynamic Programming/desktop.ini",
-    "Math/Boolean Algebra/desktop.ini",
-    "Code/Algorithm logic/Recursive.md",
-    "Code/Algorithm logic/Dynamic Programming.md",
-    "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
-    "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
-    "ADMIN/IMAGE/Pasted image 20260420180722.png",
-    "ADMIN/IMAGE/Pasted image 20260420180610.png",
-    "ADMIN/IMAGE/Pasted image 20260418193633.png",
-    "ADMIN/IMAGE/Pasted image 20251204191724.png"
+    "Code/Algorithm logic/Choose Algorithm.canvas"
   ]
 }

@@ -1,4 +1,4 @@
-#math/graph-theory #algorithm/graph #concept 
+#math/graph-theory #DSA/graph #concept 
 
 - Đồ thị, ...
 - 
