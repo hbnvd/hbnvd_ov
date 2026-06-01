@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e6539e6440c1c83d",
+            "id": "e16c5b0df01f634f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Boolean Algebra/Boolean Algebra.md",
+                "file": "Code/CP things/Problems/CP00005.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Boolean Algebra"
+              "title": "CP00005"
             }
           },
           {
-            "id": "628b5b69f19a584a",
+            "id": "48fd0fa10b90dfc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,21 +36,49 @@
             }
           },
           {
-            "id": "e2a1c903662988b1",
+            "id": "45fd536ddf6a07f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learned/2026/Week 22.md",
+                "file": "Physic/Kinematics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 22"
+              "title": "Kinematics"
+            }
+          },
+          {
+            "id": "362a5cfffe8d7b7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/Algorithm logic/Technics/Sliding window.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sliding window"
+            }
+          },
+          {
+            "id": "9ecdc544fe9f29d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADMIN/skibidi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "skibidi"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -62,7 +90,7 @@
       {
         "id": "9be6cc166066edf3",
         "type": "tabs",
-        "dimension": 69.43734015345268,
+        "dimension": 63.63636363636363,
         "children": [
           {
             "id": "489f4d3f366be6c2",
@@ -83,7 +111,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bit",
+                "query": "kinem",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,23 +132,34 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "fe512a036d778c5b",
         "type": "tabs",
-        "dimension": 30.562659846547312,
+        "dimension": 36.36363636363637,
         "children": [
           {
             "id": "32f4b620aa009359",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "graph",
               "state": {},
-              "pinned": true,
               "icon": "lucide-git-fork",
               "title": "Graph view"
+            }
+          },
+          {
+            "id": "67d3b26774faf0bd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "pinned": true,
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
@@ -143,12 +182,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Technics/Sliding window.md",
+                "file": "Physic/Kinematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Sliding window"
+              "title": "Outgoing links from Kinematics"
             }
           },
           {
@@ -157,13 +196,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ADMIN/Undone.md",
+                "file": "Physic/Kinematics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Undone"
+              "title": "Outline of Kinematics"
             }
           },
           {
@@ -195,8 +234,7 @@
               "title": "All properties"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3811e75055405f81",
@@ -208,7 +246,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ADMIN/Undone.md",
+                "file": "Physic/Kinematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,14 +256,14 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Undone"
+              "title": "Backlinks for Kinematics"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 265.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,50 +277,50 @@
       "bases:Create new base": false
     }
   },
-  "active": "628b5b69f19a584a",
+  "active": "45fd536ddf6a07f1",
   "lastOpenFiles": [
-    "Code/CP things/Problems/CP00008.md",
-    "ADMIN/Undone.md",
-    "Math/Boolean Algebra/Boolean Algebra.md",
-    "Code/CP things/Algorithm logic/Bit process.md",
-    "Code/CP things/Algorithm logic/Data Structure/Cpp some built-in Data Structure.md",
-    "Code/CP things/Algorithm logic/Technics/Two pointers.md",
-    "Learned/2026/Week 22.md",
-    "ADMIN/skibidi.md",
-    "ADMIN/Rules.md",
     "Learned/2026/Week 23.md",
+    "ADMIN/skibidi.md",
+    "Code/CP things/Problems/CP00005.md",
+    "ADMIN/Undone.md",
+    "ADMIN/Unsorted.md",
+    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+    "UNO.md",
+    "Code/CP things/Algorithm logic/Technics/Sliding window.md",
+    "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
+    "ADMIN/IMAGE/Pasted image 20260529203905.png",
+    "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
+    "ADMIN/IMAGE/Pasted image 20260601161735.png",
+    "ADMIN/IMAGE/Pasted image 20260529204937.png",
+    "ADMIN/IMAGE/Pasted image 20260529203850.png",
+    "ADMIN/IMAGE/Pasted image 20260529203103.png",
+    "ADMIN/IMAGE/Pasted image 20260529202904.png",
+    "ADMIN/IMAGE/Pasted image 20260518145944.png",
+    "ADMIN/IMAGE/Pasted image 20260529171339.png",
+    "Code/CP things/Algorithm logic/Technics/Kadane's.md",
+    "Code/CP things/Algorithm logic/Technics/Two pointers.md",
+    "ADMIN/Rules.md",
+    "Code/CP things/Algorithm logic/Bit process.md",
+    "Code/CP things/Problems/CP00011.md",
+    "2026-06-01.md",
+    "Code/CP things/Problems/CP00009.md",
+    "Code/CP things/Algorithm logic/Data Structure/Cpp some DS  STL.md",
+    "Code/CP things/Problems/CP00010.md",
+    "Code/CP things/Problems/CP00008.md",
+    "Code/CP things/Problems/CP00006.md",
+    "Code/CP things/Problems/CP00007.md",
+    "Math/Boolean Algebra/Boolean Algebra.md",
+    "Learned/2026/Week 22.md",
     "Learned/2026",
     "Code/CP things/Cách chọn alg phù hợp.canvas",
     "Learned",
     "Code/CP things/Bug thường gặp.canvas",
-    "Code/CP things/Algorithm logic/Technics/Sliding window.md",
     "Code/CP things/Bug thường gặp.md",
     "Code/CP things/Untitled",
-    "Code/CP things/Problems/CP00007.md",
-    "Code/CP things/Problems/CP00006.md",
-    "Code/CP things/Problems/CP00005.md",
     "Code/CP things/Problems/CP00003.md",
     "Code/CP things/Problems/CP00004.md",
     "Code/CP things/Problems/CP00000 - CP problems.md",
-    "Untitled.md",
-    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
     "Code/CP things/Algorithm logic/Technics",
-    "Code/CP things/Algorithm logic/Dynamic Programming/Dynamic Programming.md",
-    "Code/CP things/Algorithm logic/Algorithm.md",
-    "Code/CP things/Algorithm logic/Untitled.md",
-    "Code/CP things/Algorithm logic/Dynamic Programming/DP bitmask.md",
-    "Code/CP things/Algorithm logic/Technics.md",
-    "Code/CP things/Algorithm logic/Loop/Loop.md",
-    "ADMIN/IMAGE/Pasted image 20260529204937.png",
-    "ADMIN/IMAGE/Pasted image 20260529203905.png",
-    "ADMIN/IMAGE/Pasted image 20260529203850.png",
-    "ADMIN/IMAGE/Pasted image 20260529203103.png",
-    "ADMIN/IMAGE/Pasted image 20260529203019.png",
-    "ADMIN/IMAGE/Pasted image 20260529202955.png",
-    "ADMIN/IMAGE/Pasted image 20260529202931.png",
-    "ADMIN/IMAGE/Pasted image 20260529202920.png",
-    "ADMIN/IMAGE/Pasted image 20260529202912.png",
-    "ADMIN/IMAGE/Pasted image 20260529202904.png",
     "New Text Document.txt",
     "Code/CP things/Algorithm logic/DS/Untitled",
     "Code/CP things/Algorithm logic/Data Structure",

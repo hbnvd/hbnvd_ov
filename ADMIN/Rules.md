@@ -1,1 +1,1 @@
-1. idk
+1. Trong [[CP]], nên xếp thứ tự solve từ dễ (1) tới khó (n), best solve luôn ở sau cùng;), lâu lâu có thêm .

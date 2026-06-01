@@ -1,4 +1,4 @@
-#DSA/two-pointers 
+#DSA/two-pointers #DSA/BigO/n
 
 - **Tối ưu hóa độ phức tạp:** Chuyển đổi các bài toán duyệt mảng/chuỗi từ hai vòng lặp lồng nhau $O(N^2)$ về một vòng lặp đơn $O(N)$ bằng cách cho hai con trỏ di chuyển tịnh tiến theo một hướng hoặc ngược hướng nhau.
 - **Tiết kiệm bộ nhớ:** Giải quyết cấu trúc đoạn, tìm kiếm cặp phần tử hoặc chuỗi con thỏa mãn điều kiện trực tiếp trên mảng hiện tại với độ phức tạp không gian lưu trữ tối ưu $O(1)$.

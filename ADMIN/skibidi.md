@@ -1,4 +1,4 @@
-### 📅 LỊCH TRÌNH 1 NGÀY: "THE OLYMPIAD COMPILER"
+
 
 #### 🌅 BLOCK 1: KHỞI ĐỘNG CÁC MÔN PHỔ THÔNG (07:30 - 10:45)
 
@@ -9,12 +9,11 @@
 - **08:45 - 09:45 (1h LÝ):** Giải bài tập Vật Lý. Sóng, Cơ, hay Điện... cày cuốc dứt điểm.
     
 - **09:45 - 10:00 (15p nghỉ):** Đứng dậy uống nước, vươn vai. **Tuyệt đối không đụng vào điện thoại.**
-    
-- **10:00 - 10:45 (45p TIẾNG ANH - Phần 1):** Học ngữ pháp, luyện đề hoặc viết luận.
-    
 
 #### 🧠 BLOCK 2: CHUYÊN TIN CA SÁNG - LÝ THUYẾT NẶNG (10:45 - 12:15) — [1.5 Tiếng Chuyên]
 
+- **10:00 - 10:45 (45p TIẾNG ANH - Phần 1):** Học ngữ pháp, luyện đề hoặc viết luận.
+    
 - **10:45 - 12:15:** Thời điểm này não đang chạy mượt, hãy nạp các lý thuyết siêu nặng về AI, cấu trúc dữ liệu nâng cao (Segment Tree, Trie...) hoặc thuật toán Đồ thị.
     
 - **12:15 - 13:45 (Nghỉ trưa):** Ăn trưa, xem video giải trí (meme công nghệ, parody để kích hoạt tư duy phân tán). **Bắt buộc ngủ trưa 25-30 phút** để reset bộ nhớ đệm.
@@ -45,17 +44,15 @@
     
 - **23:00 - 23:15 (15p SOẠN LỊCH MAI):** Kiểm tra lại xem hôm nay hoàn thành được bao nhiêu %, chuẩn bị sẵn tài liệu và bài tập cho ngày mai ra bàn. Ngày mai thức dậy chỉ việc ngồi vào học, không mất thời gian nghĩ "hôm nay học gì".
     
-- **23:15:** Tắt máy, thả lỏng và đi ngủ trước 23:30 để não làm lệnh `COMMIT` lưu kiến thức vào bộ nhớ dài hạn.
+- **23:15:** Tắt máy, thả lỏng và đi ngủ trước 23:30 để não làm lệnh COMMIT lưu kiến thức vào bộ nhớ dài hạn.
     
 
-### ⚙️ TỔNG KẾT TÀI NGUYÊN BỘ NÃO 1 NGÀY:
+### ⚙️:D
 
 - **Chuyên Tin:** $1.5h + 3.25h + 3.25h = \mathbf{8\text{ tiếng}}$
     
-- **Toán / Lý / Môn còn lại:** $1h + 1h + 1h = \mathbf{3\text{ tiếng}}$
-    
-- **Tiếng Anh:** $45p + 15p = \mathbf{1\text{ tiếng}}$
+- **Toán / Lý/ Anh / Môn còn lại:** $1h + 1h + 1h + 1h = \mathbf{4\text{ tiếng}}$
     
 - **Soạn lịch (Đầu + Cuối ngày):** $15p + 15p = \mathbf{30\text{ phút}}$
     
-- **Thể dục:** $\mathbf{45\text{ phút}}$
+- **Thể dục:** $45$ phút

@@ -14,19 +14,20 @@ Chương này bao gồm
 
 ---
 # I. Các DS, .method() của nó
-## 1. Vector 
+## Vector 
 
 Mảng động có khả năng tự động thay đổi kích thước khi thêm hoặc xóa phần tử. Các phần tử nằm trên các ô nhớ liên tiếp nhau trong bộ nhớ.
 
 | **Cách gọi**        | **Công dụng**                   | **Cách nó hoạt động**                                                                                                              | **Độ phức tạp**               |
 | ------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
 | `[i]` hoặc `.at(i)` | Truy cập phần tử tại chỉ số `i` | Tính toán địa chỉ ô nhớ bằng công thức $BaseAddress + i \times Size$.                                                              | $O(1)$                        |
+| `.back()`           | Trả về phần tử cuối             | $\text{BaseAddress} + (\text{size} - 1) \times \text{SizeOfElement}$                                                               | $O(1)$                        |
 | `.push_back(x)`     | Thêm phần tử `x` vào cuối mảng  | Gán `x` vào ô nhớ tiếp theo. Nếu mảng bị đầy bộ nhớ đệm, nó sẽ tự cấp phát một vùng nhớ mới rộng gấp đôi và sao chép mảng cũ sang. | $O(1)$ trung bình (amortized) |
 | `.pop_back()`       | Xóa phần tử cuối cùng           | Giảm kích thước logic (`size`) của mảng đi 1, phần tử cuối không còn truy cập được nữa.                                            | $O(1)$                        |
 | `.size()`           | Trả về số lượng phần tử         | Trả về một biến đếm kích thước hiện tại đang được lưu sẵn trong cấu trúc.                                                          | $O(1)$                        |
 | `.clear()`          | Xóa toàn bộ phần tử             | Giải phóng hoặc hủy các phần tử hiện tại, đưa kích thước (`size`) về 0 nhưng giữ nguyên dung lượng bộ nhớ đệm (`capacity`).        | $O(N)$                        |
 
-## 2. Set & Multiset
+## Set & Multiset
 Cấu trúc dữ liệu lưu trữ các phần tử theo thứ tự tăng dần, không thể sửa đổi giá trị phần tử. `set` chỉ lưu các phần tử độc nhất, trong khi `multiset` cho phép các phần tử trùng nhau. Cả hai đều được cài đặt bằng **Cây nhị phân tìm kiếm cân bằng (Red-Black Tree)**.
 
 | **Cách gọi**      | **Công dụng**                | **Cách nó hoạt động**                                                                                                                                          | **Độ phức tạp**                     |
@@ -39,7 +40,7 @@ Cấu trúc dữ liệu lưu trữ các phần tử theo thứ tự tăng dần,
 | `.lower_bound(x)` | Tìm phần tử đầu tiên $\ge x$ | Tìm kiếm trên cây nhị phân để xác định phần tử nhỏ nhất nhưng vẫn lớn hơn hoặc bằng `x`.                                                                       | $O(\log N)$                         |
 | `.upper_bound(x)` | Tìm phần tử đầu tiên $> x$   | Tương tự lower_bound nhưng tìm phần tử nhỏ nhất nghiêm ngặt lớn hơn `x`.                                                                                       | $O(\log N)$                         |
 
-## 3. Map
+## Map
 
 Tương tự như `set` nhưng mỗi nút trên cây nhị phân cân bằng lưu một cặp `pair<key, value>`. Các nút được sắp xếp tự động tăng dần dựa vào `key`.
 Dùng [[#8. Unordered Map (`std unordered_map`) — Bản ánh xạ không thứ tự (Hash Table)|unodered_map]] cho lẹ
@@ -51,8 +52,18 @@ Dùng [[#8. Unordered Map (`std unordered_map`) — Bản ánh xạ không thứ
 | `.erase(key)`   | Xóa cặp key-value         | Tìm kiếm nút có `key` tương ứng và xóa khỏi cây, sau đó xoay cây để bảo toàn tính cân bằng.                                    | $O(\log N)$     |
 | `.count(key)`   | Kiểm tra sự tồn tại       | Tìm kiếm `key` trên cây. Trả về 1 nếu có và 0 nếu không có (vì key trong map là duy nhất).                                     | $O(\log N)$     |
 | `.find(key)`    | Tìm và lấy con trỏ        | Duyệt cây nhị phân để tìm `key`. Trả về iterator trỏ đến cặp phần tử nếu thấy, ngược lại trả về `.end()`.                      | $O(\log N)$     |
+## Multi map
+Tương tự như `std::map`, `std::multimap` được cài đặt bằng Cây nhị phân tìm kiếm cân bằng (Red-Black Tree), trong đó mỗi nút chứa một cặp `pair<key, value>`. Tuy nhiên, cấu trúc này **cho phép nhiều phần tử có cùng một `key`**. Do đó, nó **không hỗ trợ toán tử truy cập nhanh `[key]`**.
 
-## 4. Stack 
+| **Cách gọi**            | **Công dụng**                    | **Cách nó hoạt động**                                                                                                                                              | **Độ phức tạp thời gian**           |
+| ----------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
+| `.insert({key, value})` | Thêm cặp key-value               | Duyệt cây từ gốc xuống, tìm vị trí thích hợp cho `key` (kể cả khi `key` đã tồn tại), tạo nút mới và thực hiện xoay cây cân bằng.                                   | $O(\log N)$                         |
+| `.erase(key)`           | Xóa **tất cả** cặp có cùng `key` | Tìm đến vùng các nút có cùng `key` trên cây, xóa toàn bộ các nút này và thực hiện tái cân bằng hệ thống cây.                                                       | $O(\log N + \text{số lượng trùng})$ |
+| `.erase(it)`            | Xóa bằng con trỏ `iterator`      | Giải phóng chính xác nút mà con trỏ `it` đang đứng mà không cần tìm kiếm lại, bảo toàn các nút trùng `key` khác.                                                   | $O(1)$ trung bình                   |
+| `.find(key)`            | Tìm phần tử đầu tiên có `key`    | Duyệt cây tìm kiếm `key`. Nếu có nhiều `key` trùng nhau, nó trả về iterator trỏ đến phần tử **đầu tiên** xuất hiện. Ngược lại trả về `.end()`.                     | $O(\log N)$                         |
+| `.count(key)`           | Đếm số lượng `key` xuất hiện     | Tìm nút đầu tiên chứa `key`, sau đó duyệt tuần tiến qua các nút kề cạnh trên cây để đếm tổng số lượng phần tử trùng `key`.                                         | $O(\log N + \text{số lượng trùng})$ |
+| `.equal_range(key)`     | Lấy khoảng chứa tất cả các `key` | Trả về một `pair` chứa 2 iterator: iterator đầu trỏ vào phần tử đầu tiên $\ge key$ (`lower_bound`), iterator sau trỏ vào phần tử đầu tiên $> key$ (`upper_bound`). | $O(\log N)$                         |
+## Stack 
 
 Cấu trúc dữ liệu hoạt động theo cơ chế **Vào sau - Ra trước (Last In, First Out)**. Phần tử nào được thêm vào cuối cùng sẽ là phần tử đầu tiên bị loại bỏ.
 
@@ -63,7 +74,7 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào sau - Ra trước (
 | `.pop()`     | Loại bỏ phần tử ở đỉnh  | Xóa bỏ phần tử ở cuối vùng bộ nhớ đệm, dịch con trỏ đỉnh xuống một nấc. Hàm này không trả về giá trị của phần tử bị xóa. | $O(1)$          |
 | `.empty()`   | Kiểm tra rỗng           | So sánh con trỏ đỉnh với vị trí bắt đầu của vùng nhớ để xác định stack có trống hay không.                               | $O(1)$          |
 
-## 5. Queue 
+## Queue 
 
 Cấu trúc dữ liệu hoạt động theo cơ chế **Vào trước - Ra trước (First In, First Out)**. Như một hàng đợi xếp hàng mua vé: ai đến trước được phục vụ trước.
 
@@ -75,7 +86,7 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào trước - Ra trư�
 | `.pop()`     | Loại bỏ phần tử ở đầu   | Di chuyển con trỏ đầu (`front`) dịch lên một nấc, phần tử cũ ở đầu hàng đợi coi như bị loại bỏ.            | $O(1)$          |
 | `.empty()`   | Kiểm tra rỗng           | Kiểm tra xem vị trí con trỏ đầu (`front`) có vượt quá hoặc trùng khít với con trỏ đuôi (`back`) hay không. | $O(1)$          |
 
-## 6. Deque
+## Deque
 
 Là cấu trúc dữ liệu mảng động nhưng được tối ưu để có thể thêm/xóa phần tử cực nhanh ở **cả hai đầu** (đầu và cuối). Bộ nhớ của deque không liên tục hoàn toàn như vector mà gồm nhiều đoạn bộ nhớ liên kết với nhau thông qua một bản đồ quản lý chỉ số.
 
@@ -88,7 +99,7 @@ Là cấu trúc dữ liệu mảng động nhưng được tối ưu để có t
 | `.pop_front()`         | Xóa phần tử ở đầu              | Tăng con trỏ biên đầu lên, giải phóng chunk bộ nhớ đầu tiên nếu nó trống.                                         | $O(1)$          |
 | `[i]`                  | Truy cập ngẫu nhiên qua chỉ số | Dựa vào bản đồ các chunk bộ nhớ để tính toán nhanh xem phần tử thứ `i` nằm ở vị trí nào và truy cập thẳng tới đó. | $O(1)$          |
 
-## 7. Priority Queue
+## Priority Queue
 
 Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nhất nằm ở đỉnh (mặc định là phần tử lớn nhất). Bản chất bên dưới của nó được cài đặt bằng cấu trúc **Max-Heap (Cây nhị phân hoàn chỉnh)** lưu trên mảng phẳng.
 
@@ -98,9 +109,37 @@ Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nh
 | `.push(x)`   | Thêm phần tử và sắp xếp      | Thêm `x` vào cuối mảng (đáy Heap), sau đó thực hiện quá trình sàng lên (`sift-up` / `heapify-up`) bằng cách so sánh và đổi chỗ với nút cha cho đến khi đúng vị trí.                | $O(\log N)$     |
 | `.pop()`     | Xóa phần tử ưu tiên cao nhất | Tráo đổi phần tử ở đỉnh Heap với phần tử cuối cùng ở đáy, loại bỏ phần tử cuối đó đi. Sau đó thực hiện sàng xuống (`sift-down` / `heapify-down`) từ đỉnh để tái cấu trúc lại Heap. | $O(\log N)$     |
 | `.empty()`   | Kiểm tra hàng đợi rỗng       | Kiểm tra xem kích thước mảng biểu diễn Heap bên dưới có bằng 0 hay không.                                                                                                          | $O(1)$          |
-## 8. Unordered Map 
 
-Khác với `std::map` (dựa trên cây nhị phân), `std::unordered_map` được cài đặt bằng **Bảng băm (Hash Table)**. Các phần tử trong cặp `pair<key, value>` không được sắp xếp theo bất kỳ thứ tự nào. Khi bạn thêm một phần tử, hệ thống sẽ chạy một hàm băm (hash function) để biến đổi `key` thành một chỉ số (index) và nhét nó vào một chiếc rổ (bucket) tương ứng trong bộ nhớ.
+## List 
+
+Khác với `std::vector` hay `std::deque` lưu trữ phần tử trong các ô nhớ liền kề, `std::list` được cài đặt bằng **Danh sách liên kết đôi (Doubly Linked List)**. Mỗi phần tử (nút - node) trong `list` nằm ở một địa chỉ bộ nhớ hoàn toàn ngẫu nhiên. Để liên kết với nhau, mỗi nút sẽ giữ hai con trỏ: một trỏ đến nút phía trước (`prev`) và một trỏ đến nút phía sau (`next`).
+Thật ra bạn nên tự xây bằng mảng thì tốt độ truy cập sẽ ngon hơn cái loz này;))
+
+| **Cách gọi**                       | **Công dụng**                          | **Cách nó hoạt động**                                                                                                                                                             | **Độ phức tạp thời gian** |
+| ---------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| `.front()` / `.back()`             | Lấy giá trị phần tử đầu / cuối         | list luôn giữ hai con trỏ quản lý biên là `head` (đầu danh sách) và `tail` (cuối danh sách). Hàm `.front()` đọc giá trị tại nút `head`, hàm `.back()` đọc giá trị tại nút `tail`. | $O(1)$                    |
+| `.push_back(x)` / `.push_front(x)` | Thêm phần tử vào cuối / đầu list       | Cấp phát bộ nhớ cho một nút mới chứa `x`, sau đó thay đổi các con trỏ `next` và `prev` của nút biên để nối nút mới này vào.                                                       | $O(1)$                    |
+| `.pop_back()` / `.pop_front()`     | Xóa phần tử ở cuối / đầu list          | Cắt liên kết của nút ở biên, cập nhật lại con trỏ của nút kế cận nó, sau đó giải phóng bộ nhớ của nút bị xóa.                                                                     | $O(1)$                    |
+| `.insert(it, x)`                   | Chèn `x` vào trước vị trí con trỏ `it` | Cấp phát nút mới, đổi hướng các con trỏ của nút trước và sau vị trí `it` để "chen" nút mới vào giữa mà không cần dịch chuyển các phần tử khác.                                    | $O(1)$                    |
+| `.erase(it)`                       | Xóa phần tử tại vị trí con trỏ `it`    | Nối trực tiếp nút đứng trước `it` với nút đứng sau `it`, sau đó giải phóng bộ nhớ của nút tại `it`.                                                                               | $O(1)$                    |
+| `.splice(it, other_list)`          | Cắt và dán một đoạn từ danh sách khác  | Chỉ cần thay đổi con trỏ nối ở điểm đầu và điểm cuối của đoạn được cắt để ghép vào vị trí `it`. Không hề có thao tác sao chép phần tử.                                            | $O(1)$                    |
+| `.size()`                          | Trả về số lượng phần tử                | Trả về giá trị của biến đếm kích thước được lưu trữ sẵn trong `list`.                                                                                                             | $O(1)$                    |
+## String 
+
+Bản chất bên dưới của `std::string` hoạt động **y hệt như `std::vector<char>`**. Nó lưu trữ các ký tự liên tiếp nhau trong bộ nhớ và có khả năng tự động co dãn kích thước. Chính vì là một mảng phẳng liên tiếp, `string` sở hữu đầy đủ sức mạnh của một Random Access Container (truy cập ngẫu nhiên, sử dụng được toán tử `[i]`, nhảy cóc Iterator).
+
+|**Cách gọi**|**Công dụng**|**Cách nó hoạt động**|**Độ phức tạp thời gian**|
+|---|---|---|---|
+|`[i]` hoặc `.at(i)`|Truy cập ký tự tại chỉ số `i`|Tính toán địa chỉ ô nhớ bằng công thức giống vector để lấy ký tự ra trong nháy mắt.|$O(1)$|
+|`s1 += s2` hoặc `.push_back(c)`|Nối chuỗi hoặc thêm ký tự vào cuối|Thêm ký tự vào ô nhớ tiếp theo. Nếu hết bộ nhớ đệm, nó sẽ tự cấp phát vùng nhớ mới rộng gấp đôi để chứa chuỗi mới.|$O(1)$ trung bình cho `push_back`<br><br>  <br><br>$O(|
+|`.pop_back()`|Xóa ký tự cuối cùng|Giảm biến đếm kích thước hiện tại đi 1, ký tự cuối sẽ bị loại bỏ.|$O(1)$|
+|`.size()` hoặc `.length()`|Trả về độ dài của chuỗi|Đọc trực tiếp biến lưu độ dài chuỗi được quản lý bên trong cấu trúc.|$O(1)$|
+|`.substr(pos, len)`|Cắt một chuỗi con|Tạo ra một bản sao chuỗi mới trích từ vị trí `pos` và lấy ra `len` ký tự.|$O(len)$|
+|`.find(sub)`|Tìm kiếm chuỗi con|Duyệt dọc chuỗi để tìm vị trí đầu tiên chuỗi `sub` xuất hiện. Nếu không thấy, trả về `std::string::npos`.|$O(N \times M)$ tệ nhất (với $N, M$ là độ dài 2 chuỗi)|
+# II. unodered_ (hash)
+## 1. Unordered Map 
+
+Khác với [[Cpp some DS  STL#I. Các DS, .method() của nó#3. Map|Map]] (dựa trên cây nhị phân), `std::unordered_map` được cài đặt bằng **Bảng băm (Hash Table)**. Các phần tử trong cặp `pair<key, value>` không được sắp xếp theo bất kỳ thứ tự nào. Khi bạn thêm một phần tử, hệ thống sẽ chạy một hàm băm (hash function) để biến đổi `key` thành một chỉ số (index) và nhét nó vào một chiếc rổ (bucket) tương ứng trong bộ nhớ.
 
 | **Cách gọi**    | **Công dụng**                     | **Cách nó hoạt động**                                                                                                                         | **Độ phức tạp thời gian**               |
 | --------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
@@ -110,8 +149,38 @@ Khác với `std::map` (dựa trên cây nhị phân), `std::unordered_map` đư
 | `.count(key)`   | Kiểm tra key có tồn tại hay không | Băm `key` và kiểm tra xem tại vị trí bucket tương ứng có phần tử nào trùng key không. Trả về 1 nếu có, 0 nếu không.                           | $O(1)$ trung bình<br><br>$O(N)$ tệ nhất |
 | `.find(key)`    | Tìm và lấy con trỏ (iterator)     | Băm `key` để tìm kiếm phần tử. Nếu tìm thấy, trả về iterator trỏ đến vị trí đó; nếu duyệt hết bucket vẫn không có, trả về `.end()`.           | $O(1)$ trung bình<br><br>$O(N)$ tệ nhất |
 | `.reserve(n)`   | Cấp phát sớm $n$ phần tử          | Yêu cầu bảng băm chuẩn bị sẵn số lượng bucket đủ cho $n$ phần tử, giúp hạn chế việc cấu trúc lại bảng băm (rehash) khi thêm phần tử liên tục. | $O(N)$                                  |
+## 2. Unordered Set
 
->⚠️ Lưu ý chí tử khi dùng `unordered_map` trong Lập trình thi đấu (CP)
+Cấu trúc lưu trữ các phần tử độc nhất (không trùng lặp) và không có bất kỳ thứ tự sắp xếp nào.
+
+|**Cách gọi**|**Công dụng**|**Cách nó hoạt động**|**Độ phức tạp thời gian**|
+|---|---|---|---|
+|`.insert(x)`|Thêm phần tử `x`|Tính mã băm của `x`, tìm bucket. Nếu `x` chưa tồn tại trong bucket thì nhét `x` vào đầu danh sách liên kết của bucket đó.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.find(x)`|Tìm kiếm con trỏ|Băm `x`, nhảy tới bucket tương ứng và duyệt tuyến tính mảng liên kết của bucket để tìm `x`. Không thấy trả về `.end()`.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.erase(x)`|Xóa phần tử `x`|Băm `x`, định vị bucket và giải phóng nút chứa giá trị `x` trong danh sách liên kết.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.count(x)`|Kiểm tra sự tồn tại|Băm `x` để tìm. Vì `unordered_set` không trùng lặp nên chỉ trả về `1` nếu tìm thấy hoặc `0` nếu không thấy.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+## 3. Unordered Multiset
+
+Tương tự như `unordered_set` nhưng **cho phép chứa các phần tử có giá trị trùng nhau**. Các phần tử trùng nhau sẽ được xếp chung vào cùng một bucket để quản lý.
+
+|**Cách gọi**|**Công dụng**|**Cách nó hoạt động**|**Độ phức tạp thời gian**|
+|---|---|---|---|
+|`.insert(x)`|Thêm phần tử `x`|Tính mã băm của `x` và đẩy nút mới chứa `x` vào bucket mà không cần kiểm tra trùng lặp trước đó.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.erase(x)`|Xóa **toàn bộ** phần tử bằng `x`|Băm `x`, định vị bucket và xóa **sạch sành sanh** tất cả các nút có giá trị bằng `x` trong danh sách liên kết của bucket đó.|$O(\text{số phần tử xóa})$ trung bình|
+|`.erase(it)`|Xóa đúng **1** phần tử bằng con trỏ|Giải phóng trực tiếp nút bộ nhớ tại vị trí iterator `it` đang trỏ tới. Các phần tử trùng giá trị ở các nút khác được giữ nguyên.|$O(1)$ trung bình|
+|`.count(x)`|Đếm số lần xuất hiện|Tìm bucket của `x`, duyệt dọc danh sách liên kết của bucket để đếm xem có bao nhiêu nút mang giá trị trùng với `x`.|$O(\text{số lượng trùng})$ trung bình|
+## 4. Unordered Multimap
+
+Cấu trúc bảng băm lưu trữ các cặp `pair<key, value>`, trong đó **cho phép nhiều nút có chung một `key`** (các nút trùng `key` sẽ rơi vào cùng một bucket bộ nhớ). Tương tự `multimap`, cấu trúc này **không dùng được toán tử `[key]`**.
+
+|**Cách gọi**|**Công dụng**|**Cách nó hoạt động**|**Độ phức tạp thời gian**|
+|---|---|---|---|
+|`.insert({key, value})`|Thêm cặp phần tử|Băm `key` rồi chèn thẳng cặp phần tử vào bucket tương ứng mà không cần quan tâm `key` đã tồn tại hay chưa.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.erase(key)`|Xóa **tất cả** cặp trùng `key`|Tìm bucket của `key`, duyệt toàn bộ danh sách liên kết và xóa toàn bộ các cặp có khóa trùng với `key`.|$O(\text{số phần tử xóa})$ trung bình|
+|`.find(key)`|Tìm cặp đầu tiên chứa `key`|Băm `key`, tìm bucket và trả về iterator trỏ đến cặp phần tử đầu tiên khớp `key` trong danh sách.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+|`.equal_range(key)`|Lấy khoảng chứa các cặp trùng `key`|Trả về một `pair` chứa iterator đầu và iterator cuối quản lý vùng lân cận kề nhau của các cặp phần tử có chung `key` trong bucket.|$O(1)$ trung bình / $O(N)$ tệ nhất|
+## LƯU Ý ĐIỂM YẾU CHÍ MẠNG
+>⚠️ Lưu ý chí tử khi dùng `unordered_map`, hoặc mấy `cái hash stl khác` trong Lập trình thi đấu (CP)
 
 Mặc dù độ phức tạp lý thuyết là $O(1)$, `unordered_map` trong C++ sử dụng hàm băm mặc định (`std::hash`) có một điểm yếu chết người: **Nó có thể bị "bẫy" (Hack)**.
 
@@ -140,62 +209,6 @@ struct custom_hash {
 // Cách khai báo an toàn:
 std::unordered_map<long long, int, custom_hash> safe_map;
 ```
-## 9. List 
-
-Khác với `std::vector` hay `std::deque` lưu trữ phần tử trong các ô nhớ liền kề, `std::list` được cài đặt bằng **Danh sách liên kết đôi (Doubly Linked List)**. Mỗi phần tử (nút - node) trong `list` nằm ở một địa chỉ bộ nhớ hoàn toàn ngẫu nhiên. Để liên kết với nhau, mỗi nút sẽ giữ hai con trỏ: một trỏ đến nút phía trước (`prev`) và một trỏ đến nút phía sau (`next`).
-Thật ra bạn nên tự xây bằng mảng thì tốt độ truy cập sẽ ngon hơn cái loz này;))
-
-| **Cách gọi**                       | **Công dụng**                          | **Cách nó hoạt động**                                                                                                                          | **Độ phức tạp thời gian** |
-| ---------------------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| `.front()` / `.back()`             | Lấy giá trị phần tử đầu / cuối         | Đếch biết;))                                                                                                                                   | $O(1)$                    |
-| `.push_back(x)` / `.push_front(x)` | Thêm phần tử vào cuối / đầu list       | Cấp phát bộ nhớ cho một nút mới chứa `x`, sau đó thay đổi các con trỏ `next` và `prev` của nút biên để nối nút mới này vào.                    | $O(1)$                    |
-| `.pop_back()` / `.pop_front()`     | Xóa phần tử ở cuối / đầu list          | Cắt liên kết của nút ở biên, cập nhật lại con trỏ của nút kế cận nó, sau đó giải phóng bộ nhớ của nút bị xóa.                                  | $O(1)$                    |
-| `.insert(it, x)`                   | Chèn `x` vào trước vị trí con trỏ `it` | Cấp phát nút mới, đổi hướng các con trỏ của nút trước và sau vị trí `it` để "chen" nút mới vào giữa mà không cần dịch chuyển các phần tử khác. | $O(1)$                    |
-| `.erase(it)`                       | Xóa phần tử tại vị trí con trỏ `it`    | Nối trực tiếp nút đứng trước `it` với nút đứng sau `it`, sau đó giải phóng bộ nhớ của nút tại `it`.                                            | $O(1)$                    |
-| `.splice(it, other_list)`          | Cắt và dán một đoạn từ danh sách khác  | Chỉ cần thay đổi con trỏ nối ở điểm đầu và điểm cuối của đoạn được cắt để ghép vào vị trí `it`. Không hề có thao tác sao chép phần tử.         | $O(1)$                    |
-| `.size()`                          | Trả về số lượng phần tử                | Trả về giá trị của biến đếm kích thước được lưu trữ sẵn trong `list`.                                                                          | $O(1)$                    |
-## 10. String 
-
-Bản chất bên dưới của `std::string` hoạt động **y hệt như `std::vector<char>`**. Nó lưu trữ các ký tự liên tiếp nhau trong bộ nhớ và có khả năng tự động co dãn kích thước. Chính vì là một mảng phẳng liên tiếp, `string` sở hữu đầy đủ sức mạnh của một Random Access Container (truy cập ngẫu nhiên, sử dụng được toán tử `[i]`, nhảy cóc Iterator).
-
-|**Cách gọi**|**Công dụng**|**Cách nó hoạt động**|**Độ phức tạp thời gian**|
-|---|---|---|---|
-|`[i]` hoặc `.at(i)`|Truy cập ký tự tại chỉ số `i`|Tính toán địa chỉ ô nhớ bằng công thức giống vector để lấy ký tự ra trong nháy mắt.|$O(1)$|
-|`s1 += s2` hoặc `.push_back(c)`|Nối chuỗi hoặc thêm ký tự vào cuối|Thêm ký tự vào ô nhớ tiếp theo. Nếu hết bộ nhớ đệm, nó sẽ tự cấp phát vùng nhớ mới rộng gấp đôi để chứa chuỗi mới.|$O(1)$ trung bình cho `push_back`<br><br>  <br><br>$O(|
-|`.pop_back()`|Xóa ký tự cuối cùng|Giảm biến đếm kích thước hiện tại đi 1, ký tự cuối sẽ bị loại bỏ.|$O(1)$|
-|`.size()` hoặc `.length()`|Trả về độ dài của chuỗi|Đọc trực tiếp biến lưu độ dài chuỗi được quản lý bên trong cấu trúc.|$O(1)$|
-|`.substr(pos, len)`|Cắt một chuỗi con|Tạo ra một bản sao chuỗi mới trích từ vị trí `pos` và lấy ra `len` ký tự.|$O(len)$|
-|`.find(sub)`|Tìm kiếm chuỗi con|Duyệt dọc chuỗi để tìm vị trí đầu tiên chuỗi `sub` xuất hiện. Nếu không thấy, trả về `std::string::npos`.|$O(N \times M)$ tệ nhất (với $N, M$ là độ dài 2 chuỗi)|
-# II. .begin(), .end()
-
-> Đọc cho vui thôi chứ tốt nhất nên dùng mỗi sort, reverse ;))
-
-- Nên làm 1 chap về iterator;)
-`.begin()` trả về iterator phần tử đầu tiên
-`.end()` trả về iterator ngay sau phần tử cuối (rỗng)
-
-Các loại DS dùng được begin, end:
-- [[#1. Vector (`std vector`) — Mảng động|vector]]
-- [[#6. Deque (`std deque`) — Hàng đợi hai đầu (Double-ended queue)|deque]]
-- [[#9. List (`std list`) — Danh sách liên kết đôi (Doubly Linked List)|list]]
-- [[#2. Set & Multiset (`std set`, `std multiset`) — Tập hợp sắp xếp tự động|set & multi set]]
-- [[#3. Map (`std map`) — Bản ánh xạ (Key - Value)|map]]
-- [[#8. Unordered Map (`std unordered_map`) — Bản ánh xạ không thứ tự (Hash Table)|unordered_map]]
-Các ứng dụng thường thấy 
-
-- Sắp xếp, lật -> vector, deque
-`sort(V.begin(), V.end());`
-`reverse(V.begin(), V.end());`
-
-- Tìm min, max -> all
-`int max_val = *max_element(V.begin(), V.end());`
-`int min_val = *min_element(V.begin(), V.end());`
-
-- Trả về Iterator của phần tử `lớn hơn` hoặc bằng gần nhất với phần tử cần tìm 
-`auto it = lower_bound(V.begin(), V.end(), 35);`
-- Trả về Iterator của phần tử `nhỏ hơn` hoặc bằng gần nhất với phần tử cần tìm
-`auto it = upper_bound(V.begin(), V.end(), 35);`
-
 # III. Bài tập
 %% Có tất cả trừ string, :> %%
 
