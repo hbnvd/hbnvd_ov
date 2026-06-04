@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiBadgeDollarSign",
       "LiPenTool",
       "LiNewspaper",
       "LiArrowRightToLine",
-      "LiCodeXml",
-      "LiArrowRight"
+      "LiCodeXml"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -39,5 +39,6 @@
   "Code": "LiCodeXml",
   "Physic": "LiArrowRightToLine",
   "History": "LiNewspaper",
-  "Văn": "LiPenTool"
+  "Văn": "LiPenTool",
+  "English": "LiBadgeDollarSign"
 }

@@ -1,4 +1,4 @@
-#DSA #concept 
+#DSA #DSA/Language-syntax
 
 - Những thuật toán phức tạp luôn xoay quanh việc tối ưu những vòng lặp
 

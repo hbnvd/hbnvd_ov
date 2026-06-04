@@ -1,9 +1,0 @@
-# Chỉ chặn các file lưu trạng thái vị trí cửa sổ và tab đang mở của phiên làm việc
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/graph.json
-.obsidian/plugins/*/.obsidian/
-.obsidian/appearance.json
-# Chặn file rác hệ điều hành tự sinh
-.DS_Store
-Thumbs.db

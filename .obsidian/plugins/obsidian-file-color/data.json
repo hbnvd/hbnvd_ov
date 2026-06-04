@@ -26,6 +26,11 @@
       "id": "hlzG5ajgDo9t-Nq7V8tw5",
       "name": "Literature",
       "value": "#26fd51"
+    },
+    {
+      "id": "QgzfKDtiJQhwAcRqcXURc",
+      "name": "English",
+      "value": "#eeff00"
     }
   ],
   "fileColors": [
@@ -48,6 +53,10 @@
     {
       "path": "Văn",
       "color": "hlzG5ajgDo9t-Nq7V8tw5"
+    },
+    {
+      "path": "English",
+      "color": "QgzfKDtiJQhwAcRqcXURc"
     }
   ]
 }

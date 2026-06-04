@@ -1,13 +1,22 @@
-#DSA/DS #DSA/DS/stack #DSA/DS/queue #DSA/DS/priority-queue #DSA/DS/dequeue #DSA/DS/map #DSA/DS/unordered-map #DSA/DS/string #DSA/DS/vector #DSA/DS/list
+---
+tags:
+  - "#DSA/DS"
+  - "#DSA/DS/stack"
+  - "#DSA/DS/queue"
+  - "#DSA/DS/priority-queue"
+  - "#DSA/DS/dequeue"
+  - "#DSA/DS/map"
+  - "#DSA/DS/unordered-map"
+  - "#DSA/DS/string"
+  - "#DSA/DS/vector"
+  - "#DSA/DS/list"
+---
 
 - Đây là chương giới thiệu những DS có sẵn thường dùng trong CP của c++
+- Nguồn: cpp.com %% chắc thế %%
 
 ---
-- Nguồn: your mom fat
-
-
----
-Chương này bao gồm
+# Mục lục
 1. Các DS, các .method() của nó
 2. .begin(), .end()
 3. Bài tập
@@ -39,6 +48,7 @@ Cấu trúc dữ liệu lưu trữ các phần tử theo thứ tự tăng dần,
 | `.count(x)`       | Đếm số lần xuất hiện         | Duyệt cây tìm `x`. `set` trả về 0 hoặc 1. `multiset` duyệt qua các nút trùng nhau kề nhau để đếm.                                                              | $O(\log N + \text{số lượng trùng})$ |
 | `.lower_bound(x)` | Tìm phần tử đầu tiên $\ge x$ | Tìm kiếm trên cây nhị phân để xác định phần tử nhỏ nhất nhưng vẫn lớn hơn hoặc bằng `x`.                                                                       | $O(\log N)$                         |
 | `.upper_bound(x)` | Tìm phần tử đầu tiên $> x$   | Tương tự lower_bound nhưng tìm phần tử nhỏ nhất nghiêm ngặt lớn hơn `x`.                                                                                       | $O(\log N)$                         |
+| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
 
 ## Map
 
@@ -73,6 +83,7 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào sau - Ra trước (
 | `.push(x)`   | Đẩy phần tử vào đỉnh    | Thêm `x` vào cuối vùng bộ nhớ đệm (mặc định dựa trên `std::deque` hoặc `std::vector`) và cập nhật con trỏ đỉnh stack.    | $O(1)$          |
 | `.pop()`     | Loại bỏ phần tử ở đỉnh  | Xóa bỏ phần tử ở cuối vùng bộ nhớ đệm, dịch con trỏ đỉnh xuống một nấc. Hàm này không trả về giá trị của phần tử bị xóa. | $O(1)$          |
 | `.empty()`   | Kiểm tra rỗng           | So sánh con trỏ đỉnh với vị trí bắt đầu của vùng nhớ để xác định stack có trống hay không.                               | $O(1)$          |
+| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
 
 ## Queue 
 
@@ -85,19 +96,24 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào trước - Ra trư�
 | `.push(x)`   | Thêm phần tử vào cuối   | Thêm phần tử `x` vào vị trí cuối của vùng bộ nhớ đệm bên dưới và cập nhật con trỏ đuôi (`back`).           | $O(1)$          |
 | `.pop()`     | Loại bỏ phần tử ở đầu   | Di chuyển con trỏ đầu (`front`) dịch lên một nấc, phần tử cũ ở đầu hàng đợi coi như bị loại bỏ.            | $O(1)$          |
 | `.empty()`   | Kiểm tra rỗng           | Kiểm tra xem vị trí con trỏ đầu (`front`) có vượt quá hoặc trùng khít với con trỏ đuôi (`back`) hay không. | $O(1)$          |
+| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
 
 ## Deque
 
 Là cấu trúc dữ liệu mảng động nhưng được tối ưu để có thể thêm/xóa phần tử cực nhanh ở **cả hai đầu** (đầu và cuối). Bộ nhớ của deque không liên tục hoàn toàn như vector mà gồm nhiều đoạn bộ nhớ liên kết với nhau thông qua một bản đồ quản lý chỉ số.
+- Khởi tạo : deque\<int\> a
 
-| **Cách gọi**           | **Công dụng**                  | **Cách nó hoạt động**                                                                                             | **Độ phức tạp** |
-| ---------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- | --------------- |
-| `.front()` / `.back()` | Truy cập phần tử đầu / cuối    | Đọc giá trị tại ô nhớ được định vị bởi con trỏ biên đầu hoặc biên cuối.                                           | $O(1)$          |
-| `.push_back(x)`        | Thêm phần tử vào cuối          | Chèn phần tử vào ô nhớ trống ở chunk (đoạn bộ nhớ) cuối cùng. Cấp thêm chunk mới nếu cần.                         | $O(1)$          |
-| `.push_front(x)`       | Thêm phần tử vào đầu           | Chèn phần tử vào ô nhớ trống ở chunk đầu tiên. Tự động cấp thêm chunk phía trước nếu hết chỗ.                     | $O(1)$          |
-| `.pop_back()`          | Xóa phần tử ở cuối             | Giảm con trỏ biên cuối, giải phóng chunk bộ nhớ cuối nếu nó trở nên rỗng hoàn toàn.                               | $O(1)$          |
-| `.pop_front()`         | Xóa phần tử ở đầu              | Tăng con trỏ biên đầu lên, giải phóng chunk bộ nhớ đầu tiên nếu nó trống.                                         | $O(1)$          |
-| `[i]`                  | Truy cập ngẫu nhiên qua chỉ số | Dựa vào bản đồ các chunk bộ nhớ để tính toán nhanh xem phần tử thứ `i` nằm ở vị trí nào và truy cập thẳng tới đó. | $O(1)$          |
+
+
+| **Cách gọi**           | **Công dụng**               | **Cách nó hoạt động**                                                                                             | **Độ phức tạp** |
+| ---------------------- | --------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------- |
+| `[i]`                  | Truy cập qua chỉ số         | Dựa vào bản đồ các chunk bộ nhớ để tính toán nhanh xem phần tử thứ `i` nằm ở vị trí nào và truy cập thẳng tới đó. | $O(1)$          |
+| `.front()` / `.back()` | Truy cập phần tử đầu / cuối | Đọc giá trị tại ô nhớ được định vị bởi con trỏ biên đầu hoặc biên cuối.                                           | $O(1)$          |
+| `.push_back(x)`        | Thêm phần tử vào cuối       | Chèn phần tử vào ô nhớ trống ở chunk (đoạn bộ nhớ) cuối cùng. Cấp thêm chunk mới nếu cần.                         | $O(1)$          |
+| `.push_front(x)`       | Thêm phần tử vào đầu        | Chèn phần tử vào ô nhớ trống ở chunk đầu tiên. Tự động cấp thêm chunk phía trước nếu hết chỗ.                     | $O(1)$          |
+| `.pop_back()`          | Xóa phần tử ở cuối          | Giảm con trỏ biên cuối, giải phóng chunk bộ nhớ cuối nếu nó trở nên rỗng hoàn toàn.                               | $O(1)$          |
+| `.pop_front()`         | Xóa phần tử ở đầu           | Tăng con trỏ biên đầu lên, giải phóng chunk bộ nhớ đầu tiên nếu nó trống.                                         | $O(1)$          |
+| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
 
 ## Priority Queue
 
@@ -109,6 +125,7 @@ Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nh
 | `.push(x)`   | Thêm phần tử và sắp xếp      | Thêm `x` vào cuối mảng (đáy Heap), sau đó thực hiện quá trình sàng lên (`sift-up` / `heapify-up`) bằng cách so sánh và đổi chỗ với nút cha cho đến khi đúng vị trí.                | $O(\log N)$     |
 | `.pop()`     | Xóa phần tử ưu tiên cao nhất | Tráo đổi phần tử ở đỉnh Heap với phần tử cuối cùng ở đáy, loại bỏ phần tử cuối đó đi. Sau đó thực hiện sàng xuống (`sift-down` / `heapify-down`) từ đỉnh để tái cấu trúc lại Heap. | $O(\log N)$     |
 | `.empty()`   | Kiểm tra hàng đợi rỗng       | Kiểm tra xem kích thước mảng biểu diễn Heap bên dưới có bằng 0 hay không.                                                                                                          | $O(1)$          |
+| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
 
 ## List 
 

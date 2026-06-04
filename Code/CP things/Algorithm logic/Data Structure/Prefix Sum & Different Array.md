@@ -1,4 +1,9 @@
-#DSA/prefix-sum #DSA/different-array #concept 
+---
+tags:
+  - DSA/DS/Prefix-sum
+  - "#DSA/DS/Different-array"
+---
+
 
 - Mảng cộng dồn & mảng hiệu
 - 1 cấu trúc dữ liệu chuyển tốc độ truy vấn tính tổng, hiệu 1 đoạn con lên O(1)

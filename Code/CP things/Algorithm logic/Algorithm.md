@@ -1,4 +1,4 @@
-#DSA #concept
+#DSA 
 - **Giải thuật** là bộ môn giải quyết vấn đề,  có 4 loại:
 	1. Vét cạn (Brute - Force)
 		- Lặp

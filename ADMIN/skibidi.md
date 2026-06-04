@@ -1,23 +1,22 @@
 
-
+# Sche
 #### 🌅 BLOCK 1: KHỞI ĐỘNG CÁC MÔN PHỔ THÔNG (07:30 - 10:45)
 
-- **07:30 - 07:45 (15p): Lên kế hoạch ngày:** Mở Todo-list, ghi rõ hôm nay bài Toán nào cần giải, bài Lý nào cần làm, thuật toán Chuyên Tin nào cần cày.
+- **07:30 - 07:45 (15p): Lên kế hoạch ngày:** Mở Todo-list, ghi rõ task hôm nay .
     
-- **07:45 - 08:45 (1h TOÁN):** Cày các chuyên đề Toán trên trường (Hình học Oxy, Đại số, Tổ hợp...). Học Toán đầu ngày giúp kích hoạt vùng não logic.
+- **07:45 - 09:45 (2h TOÁN/LÝ):** ummm, toán ỏ lý:D
     
-- **08:45 - 09:45 (1h LÝ):** Giải bài tập Vật Lý. Sóng, Cơ, hay Điện... cày cuốc dứt điểm.
     
-- **09:45 - 10:00 (15p nghỉ):** Đứng dậy uống nước, vươn vai. **Tuyệt đối không đụng vào điện thoại.**
+- **09:45 - 10:00 (15p nghỉ):** Đứng dậy uống nước, vươn vai. **Không đụng vào điện thoại.**
 
 #### 🧠 BLOCK 2: CHUYÊN TIN CA SÁNG - LÝ THUYẾT NẶNG (10:45 - 12:15) — [1.5 Tiếng Chuyên]
 
 - **10:00 - 10:45 (45p TIẾNG ANH - Phần 1):** Học ngữ pháp, luyện đề hoặc viết luận.
     
-- **10:45 - 12:15:** Thời điểm này não đang chạy mượt, hãy nạp các lý thuyết siêu nặng về AI, cấu trúc dữ liệu nâng cao (Segment Tree, Trie...) hoặc thuật toán Đồ thị.
+- **10:45 - 12:15:** Tin: mấy cái lý thuyết khó khó á
     
-- **12:15 - 13:45 (Nghỉ trưa):** Ăn trưa, xem video giải trí (meme công nghệ, parody để kích hoạt tư duy phân tán). **Bắt buộc ngủ trưa 25-30 phút** để reset bộ nhớ đệm.
-    
+- **12:15 - 13:45 (Nghỉ trưa):** Ăn trưa, xem video giải trí. **Bắt buộc ngủ trưa 25-30 phút** để reset RAM.
+
 
 #### 💻 BLOCK 3: CHUYÊN TIN CA CHIỀU - CÀY CODE & BUG (13:45 - 17:00) — [3.25 Tiếng Chuyên]
 
@@ -33,7 +32,7 @@
 
 #### 🌃 BLOCK 5: CHUYÊN TIN CA TỐI & MÔN PHỤ (18:30 - 22:30) — [3.25 Tiếng Chuyên + 1h Môn phụ]
 
-- **18:30 - 21:45 (3.25 Tiếng Chuyên):** Tiếp tục cày các bài tập khó, tối ưu hóa thuật toán (Refactor code), hoặc đọc các bài giảng nâng cao của các cựu thành viên đội tuyển quốc gia.
+- **18:30 - 21:45 (3.25 Tiếng Chuyên):** Tiếp tục cày các bài tập khó, tối ưu hóa thuật toán (Refactor code). Or đi đọc code của usr khác:D
     
 - **21:45 - 22:45 (1h MÔN CÒN LẠI):** Giải quyết các môn phụ trên trường (Văn, Sử, Địa, Sinh...). Mỗi ngày chỉ học 1 môn cuốn chiếu, 1 tiếng tập trung cao độ là quá đủ cho mùa hè.
     
@@ -56,3 +55,6 @@
 - **Soạn lịch (Đầu + Cuối ngày):** $15p + 15p = \mathbf{30\text{ phút}}$
     
 - **Thể dục:** $45$ phút
+# Cần chỉnh sửa
+- 2 tiếng toán, hôm sau 2 tiếng toán?
+- Nên có 2 buổi để tổng hợp vào obsi, vừa học vừa ghi vào giấy sau đó tới thời gian cần mới ghi vào obsi
