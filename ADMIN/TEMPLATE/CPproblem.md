@@ -12,9 +12,9 @@ cssclasses:
 ---
 
 # List cách tiếp cận
-1. [[#by ... - $O(n)$ - $O(n)$]] - xài trick gì gì đó
+1. [[]] - xài trick gì gì đó
 
-# by ... - $O(n)$ - $O(n)$
+# by hbnvd - O(n) - O(n)
 ## Idea
 %% Tóm gọn ý quan trọng , đủ để nhớ, có link càng tốt %%
 

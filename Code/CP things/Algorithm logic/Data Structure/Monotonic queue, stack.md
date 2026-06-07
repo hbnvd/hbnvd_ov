@@ -16,6 +16,7 @@ cssclasses:
 **Tài liệu tham khảo**:
 - https://www.geeksforgeeks.org/dsa/introduction-to-monotonic-stack-2/
 - https://www.geeksforgeeks.org/dsa/introduction-to-monotonic-queues/
+- https://wiki.vnoi.info/algo/data-structures/deque-min-max
 %% Copy from my notebook LM :p%%
 
 ---
@@ -49,12 +50,14 @@ for (int i = 1; i <= n; ++i) {
 	
 	// CORE
 	// khúc này để || là ngu á;))
-	while (!stk.empty() && a[stk.top()] > a[i]) {
+	while (!stk.empty() && a[stk.top()] >= a[i]) {
 		stk.pop();
 	}
-	stk.push(i);
 	
-	// có thể lấy kế quả ở đây
+	// có thể lấy kết quả ở đây
+	cout << a[stk.top()] << "\n"; // phần tử nhỏ hơn a[i] gần nhất.
+	
+	stk.push(i);
 }
 ```
 ## 3. Hàng đợi đơn điệu (Monotonic Queue)
@@ -81,16 +84,18 @@ int wd_sz = 5; // window size
 
 for (int i = 1; i <= n; ++i) {
 	// CORE
-	while (!dq.empty() && a[dq.back()] < a[i]) {
+	while (!dq.empty() && a[dq.back()] >= a[i]) {
 		dq.pop_back();
 	}
+	dq.push_back(i);
+	
 	// khác stack ở chỗ này
 	while (!dq.empty() && i - dq.front() >= wd_sz) {
 		dq.pop_front();
 	}
-	dq.push_back(i);
 	
 	// có thể lấy kết quả ở đây
+		cout << a[dq.front()] << "\n"; // min trong cửa sổ tịnh tiến
 }
 
 ```

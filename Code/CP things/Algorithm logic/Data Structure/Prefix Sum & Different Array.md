@@ -71,3 +71,6 @@ $$D(S(c, A)) = A\space\space\space\space(2)$$
 0. [[CP00003]]
 # IV. Mảng nhiều chiều
 - Lười viết tiếp vl;))
+
+# Bug hay gặp
+- [[CP00005]] - nên khởi tạo mn\[0] = 0

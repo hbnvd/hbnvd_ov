@@ -49,6 +49,7 @@
     "literature/story": 1,
     "math/binary": 1,
     "math/graph-theory": 2,
+    "math/modulo": 3,
     "time/2026": 1,
     "cptags/dp-bitmask/dp-brokenprofile": 1,
     "dsa/ds/dequeue": 1,

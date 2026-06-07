@@ -31,6 +31,7 @@ Các ứng dụng cơ bản của 2 con trỏ trong giải thuật
 ## 2. Hai con trỏ chạy ngược chiều
 - https://wiki.vnoi.info/algo/basic/two-pointers.md bài 2
 - Cách giải chi tiết ở [[CP00007]]
+
 ## 3. Hai con trỏ chạy cùng chiều
 - 1 con thêm, 1 con bớt ;))
 %% Toi biết nó là dynamic sliding window nhưng không chứng minh được %%
@@ -40,4 +41,6 @@ Các ứng dụng cơ bản của 2 con trỏ trong giải thuật
 ## 4. 
 - https://wiki.vnoi.info/algo/basic/two-pointers.md bài 4
 - Bài này thì toi đách hiểu gì hết á;)), nhưng mà nó có liên quan tới rùa và thỏ
+# Bài tập
+- [[CP00011]]
 # Bug từng gặp

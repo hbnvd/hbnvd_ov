@@ -8,59 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "87e6079f1af2ebdd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Monotonic queue, stack.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Monotonic queue, stack"
-            }
-          },
-          {
-            "id": "eb3adaacab7453ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sparse Table"
-            }
-          },
-          {
-            "id": "9d65a658ef0f8769",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learned/2026/Jun/Week23/Week 23.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 23"
-            }
-          },
-          {
             "id": "389f36eb3661d464",
             "type": "leaf",
             "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Code/CP things/Cách chọn alg phù hợp.canvas",
+                "viewState": {
+                  "x": 481.9100620335088,
+                  "y": 439.2988105903337,
+                  "zoom": -0.5043523826102466
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Cách chọn alg phù hợp"
+            }
+          },
+          {
+            "id": "c473dafc91995650",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Learned/2026/Jun/Week23/Th 04-06-2026.md",
+                "file": "Code/CP things/Algorithm logic/Cpp/Cpp some DS  STL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Th 04-06-2026"
+              "title": "Cpp some DS  STL"
+            }
+          },
+          {
+            "id": "cf43f3ca869381b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
@@ -97,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:pre",
+                "query": "tag:#CPtags/Sliding-window  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,25 +135,9 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "9ecdc544fe9f29d9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ADMIN/Undone.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Undone"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,12 +157,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Technics/Meet in the middle.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Meet in the middle"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -198,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learned/2026/Jun/Week23/Week 23.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Week 23"
+              "title": "Outline of README"
             }
           },
           {
@@ -236,8 +209,7 @@
               "title": "All properties"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "3811e75055405f81",
@@ -249,7 +221,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learned/2026/Week 23.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,25 +231,10 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Week 23"
-            }
-          },
-          {
-            "id": "fd9eaaf1eb7ea626",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ADMIN/skibidi.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "skibidi"
+              "title": "Backlinks for README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -295,41 +252,45 @@
       "bases:Create new base": false
     }
   },
-  "active": "9d65a658ef0f8769",
+  "active": "cf43f3ca869381b0",
   "lastOpenFiles": [
-    "Learned/2026/Jun/Week23/Th 04-06-2026.md",
     "Learned/2026/Jun/Week23/Week 23.md",
-    "ADMIN/skibidi.md",
-    "ADMIN/TEMPLATE/DailyNote.md",
-    "Learned/2026/Jun",
-    "Learned/2026/Jun/Week 22",
+    "Learned/2026/Jun/Week23/Su 07-06-2026.md",
+    "Learned/2026/Jun/Week23/Sa 06-06-2026.md",
+    "Learned/2026/Jun/Week23/Fr 05-06-2026.md",
+    "Learned/2026/Jun/Week 22/Week 22.md",
+    "Learned/2026/Jun/Week24",
     "Learned/2026/Jun/Week23",
-    "2026-06-04.md",
+    "Learned/2026/Jun/Week 22",
     "Learned/2026/Jun",
-    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
-    "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
-    "Code/CP things/Algorithm logic/Data Structure/Cpp some DS  STL.md",
-    "ADMIN/TEMPLATE/CPproblem.md",
-    "Code/CP things/Problems/CP00012.md",
-    "Code/CP things/Algorithm logic/Data Structure/Monotonic queue, stack.md",
-    "ADMIN/Undone.md",
-    "Code/CP things/Problems/CP00011.md",
-    "Code/CP things/Problems/CP00005.md",
-    "Untitled.md",
-    "Code/Code.md",
-    "English/1 số cách để học.md",
-    "Math/Chưa phân loại.md",
-    "ADMIN/TEMPLATE",
-    "English",
-    "Math/Untitled.md",
-    "Code/CP things/CP.md",
-    "Code/CP things/Algorithm logic/Technics/Sliding window.md",
-    "Code/CP things/Algorithm logic/Technics/Meet in the middle.md",
-    "Code/CP things/Algorithm logic/Technics/Two pointers.md",
+    "Learned/2026",
+    "Learned",
+    "ADMIN/Learned/2026/Jun/Week23/Fr 05-06-2026.md",
+    "ADMIN/Learned/2026/Jun/Week23/Week 23.md",
+    "ADMIN/Learned/2026/Jun/Week23/Su 07-06-2026.md",
+    "ADMIN/Learned/2026/Jun/Week23/Sa 06-06-2026.md",
+    "ADMIN/Learned/2026/Jun/Week 22/Week 22.md",
+    "ADMIN/Learned/2026/Jun/Week24",
+    "ADMIN/Learned/2026/Jun/Week23",
+    "ADMIN/Learned/2026/Jun/Week 22",
+    "ADMIN/Learned/2026/Jun",
+    "README.md",
     "Code/CP things/Cách chọn alg phù hợp.canvas",
-    "Code/CP things/Problems/CP00007.md",
-    "Code/CP things/Problems/CP00008.md",
-    "Code/CP things/Algorithm logic/Bit process.md",
+    "Code/CP things/Algorithm logic/Cpp/Cpp some DS  STL.md",
+    "ADMIN/skibidi.md",
+    "English/1 số cách để học.md",
+    "ADMIN/Undone.md",
+    "ADMIN/Rules.md",
+    "Code/CP things/Problems/CP00015.md",
+    "ADMIN/TEMPLATE/CPproblem.md",
+    "Math/Modulo/Số học modulo.md",
+    "Code/CP things/Problems/CP00014.md",
+    "Code/CP things/Problems/CP00013.md",
+    "Code/CP things/Problems/CP00001.md",
+    "Code/CP things/Problems/CP00012.md",
+    "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
+    "Code/CP things/Algorithm logic/Technics/Brute Force.md",
+    "Code/CP things/Algorithm logic/Technics/Backtrack/Backtrack.md",
     "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
     "ADMIN/IMAGE/Pasted image 20260529203905.png",
     "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
@@ -340,11 +301,7 @@
     "ADMIN/IMAGE/Pasted image 20260529202904.png",
     "ADMIN/IMAGE/Pasted image 20260518145944.png",
     "ADMIN/IMAGE/Pasted image 20260529171339.png",
-    "Learned/2026",
-    "Learned",
     "Code/CP things/Bug thường gặp.canvas",
-    "Code/CP things/Untitled",
-    "Code/CP things/Algorithm logic/Technics",
     "Code/Algorithm logic/Choose Algorithm.canvas"
   ]
 }

@@ -3,3 +3,4 @@ views:
     name: Table
     order:
       - file.tags
+      - file.basename

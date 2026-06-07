@@ -10,6 +10,7 @@ tags:
   - "#DSA/DS/string"
   - "#DSA/DS/vector"
   - "#DSA/DS/list"
+  - DSA/Language-syntax
 ---
 
 - Đây là chương giới thiệu những DS có sẵn thường dùng trong CP của c++
@@ -96,7 +97,7 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào trước - Ra trư�
 | `.push(x)`   | Thêm phần tử vào cuối   | Thêm phần tử `x` vào vị trí cuối của vùng bộ nhớ đệm bên dưới và cập nhật con trỏ đuôi (`back`).           | $O(1)$          |
 | `.pop()`     | Loại bỏ phần tử ở đầu   | Di chuyển con trỏ đầu (`front`) dịch lên một nấc, phần tử cũ ở đầu hàng đợi coi như bị loại bỏ.            | $O(1)$          |
 | `.empty()`   | Kiểm tra rỗng           | Kiểm tra xem vị trí con trỏ đầu (`front`) có vượt quá hoặc trùng khít với con trỏ đuôi (`back`) hay không. | $O(1)$          |
-| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
+| `.size()`    | trả về kích thước       | y như vector                                                                                               | $O(1)$          |
 
 ## Deque
 
