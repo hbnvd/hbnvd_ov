@@ -2,9 +2,9 @@
   "shouldConfirmBeforeCreate": true,
   "weekStart": "monday",
   "wordsPerDot": 250,
-  "showWeeklyNote": false,
-  "weeklyNoteFormat": "",
+  "showWeeklyNote": true,
+  "weeklyNoteFormat": "[Week ]ww",
   "weeklyNoteTemplate": "",
-  "weeklyNoteFolder": "",
+  "weeklyNoteFolder": "Learned/2026/Weeks",
   "localeOverride": "system-default"
 }

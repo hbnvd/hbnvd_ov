@@ -8,5 +8,5 @@ cssclasses:
 ## Ta
 ## Toán/Lý
 ## Môn phụ
-# Doing
+# Done
 # Evaluate

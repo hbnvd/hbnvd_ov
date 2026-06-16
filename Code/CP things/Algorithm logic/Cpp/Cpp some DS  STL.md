@@ -36,6 +36,7 @@ Mảng động có khả năng tự động thay đổi kích thước khi thêm
 | `.pop_back()`       | Xóa phần tử cuối cùng           | Giảm kích thước logic (`size`) của mảng đi 1, phần tử cuối không còn truy cập được nữa.                                            | $O(1)$                        |
 | `.size()`           | Trả về số lượng phần tử         | Trả về một biến đếm kích thước hiện tại đang được lưu sẵn trong cấu trúc.                                                          | $O(1)$                        |
 | `.clear()`          | Xóa toàn bộ phần tử             | Giải phóng hoặc hủy các phần tử hiện tại, đưa kích thước (`size`) về 0 nhưng giữ nguyên dung lượng bộ nhớ đệm (`capacity`).        | $O(N)$                        |
+| `.empty()`          | bool, kiểm tra rỗng             | Kiểm tra xem hai it đầu và cuối có trùng hoặc vượt qua nhau hay không                                                              | $O(1)$                        |
 
 ## Set & Multiset
 Cấu trúc dữ liệu lưu trữ các phần tử theo thứ tự tăng dần, không thể sửa đổi giá trị phần tử. `set` chỉ lưu các phần tử độc nhất, trong khi `multiset` cho phép các phần tử trùng nhau. Cả hai đều được cài đặt bằng **Cây nhị phân tìm kiếm cân bằng (Red-Black Tree)**.
@@ -99,7 +100,7 @@ Cấu trúc dữ liệu hoạt động theo cơ chế **Vào trước - Ra trư�
 | `.empty()`   | Kiểm tra rỗng           | Kiểm tra xem vị trí con trỏ đầu (`front`) có vượt quá hoặc trùng khít với con trỏ đuôi (`back`) hay không. | $O(1)$          |
 | `.size()`    | trả về kích thước       | y như vector                                                                                               | $O(1)$          |
 
-## Deque
+	## Deque
 
 Là cấu trúc dữ liệu mảng động nhưng được tối ưu để có thể thêm/xóa phần tử cực nhanh ở **cả hai đầu** (đầu và cuối). Bộ nhớ của deque không liên tục hoàn toàn như vector mà gồm nhiều đoạn bộ nhớ liên kết với nhau thông qua một bản đồ quản lý chỉ số.
 - Khởi tạo : deque\<int\> a

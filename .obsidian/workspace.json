@@ -11,21 +11,46 @@
             "id": "389f36eb3661d464",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Code/CP things/Cách chọn alg phù hợp.canvas",
-                "viewState": {
-                  "x": 481.9100620335088,
-                  "y": 439.2988105903337,
-                  "zoom": -0.5043523826102466
-                }
+                "file": "Learned/2026/Jun/Tu 16-06-2026.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Cách chọn alg phù hợp"
+              "icon": "lucide-file",
+              "title": "Tu 16-06-2026"
+            }
+          },
+          {
+            "id": "9262aedac80cb2a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADMIN/Undone.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Undone"
             }
           },
           {
             "id": "c473dafc91995650",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learned/2026/Weeks/Week 25.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Week 25"
+            }
+          },
+          {
+            "id": "d0e9de65effc97a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -39,21 +64,34 @@
             }
           },
           {
-            "id": "cf43f3ca869381b0",
+            "id": "10dd9d48726db36d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Code/CP things/Problems/CP00017.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "CP00017"
+            }
+          },
+          {
+            "id": "1d1ffdbceb965cbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Backtrack"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#CPtags/Sliding-window  ",
+                "query": "tag:time/2026/w24",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -141,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5
+    "width": 280.5
   },
   "right": {
     "id": "fd74f8de419a26a6",
@@ -157,12 +195,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ADMIN/skibidi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from skibidi"
             }
           },
           {
@@ -171,13 +209,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Learned/2026/Jun/Tu 16-06-2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Tu 16-06-2026"
             }
           },
           {
@@ -208,8 +246,21 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "c06d757f45462efd",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Learned/2026/Jun/Fr 12-06-2026.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Fr 12-06-2026"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "3811e75055405f81",
@@ -221,20 +272,35 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Learned/2026/Jun/Tu 16-06-2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Tu 16-06-2026"
+            }
+          },
+          {
+            "id": "2bc32f2b06c4495d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ADMIN/skibidi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "skibidi"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -252,45 +318,46 @@
       "bases:Create new base": false
     }
   },
-  "active": "cf43f3ca869381b0",
+  "active": "389f36eb3661d464",
   "lastOpenFiles": [
-    "Learned/2026/Jun/Week23/Week 23.md",
-    "Learned/2026/Jun/Week23/Su 07-06-2026.md",
-    "Learned/2026/Jun/Week23/Sa 06-06-2026.md",
-    "Learned/2026/Jun/Week23/Fr 05-06-2026.md",
-    "Learned/2026/Jun/Week 22/Week 22.md",
+    "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+    "Code/CP things/Problems/CP00019.md",
+    "Code/CP things/Problems/CP00018.md",
+    "Code/CP things/Problems/CP00017.md",
+    "Learned/2026/Jun/Tu 16-06-2026.md",
+    "ADMIN/skibidi.md",
+    "Code/CP things/Problems/CP00008.md",
+    "Code/CP things/Algorithm logic/Technics/Recursion/Recursion.md",
+    "Code/CP things/Problems/CP00016.md",
+    "Learned/2026/Weeks/Week 25.md",
+    "Learned/2026/Weeks/Week 24.md",
+    "Learned/2026/Jun/Mo 15-06-2026.md",
+    "ADMIN/Undone.md",
+    "Code/CP things/Algorithm logic/Cpp/Cpp some DS  STL.md",
+    "Learned/2026/Jun/Sa 13-06-2026.md",
+    "Learned/2026/Jun/Su 14-06-2026.md",
+    "Code/CP things/Algorithm logic/Technics/Meet in the middle.md",
+    "Code/CP things/Algorithm logic/Technics/Brute Force.md",
+    "Code/CP things/Algorithm logic/Technics/Kadane's.md",
+    "Code/CP things/Algorithm logic/Technics/Binary search.md",
+    "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
+    "Code/CP things/Algorithm logic/Data Structure/Prefix Sum & Different Array.md",
+    "Code/CP things/Algorithm logic/Data Structure/Monotonic queue, stack.md",
+    "Learned/2026/Jun/Fr 12-06-2026.md",
+    "Code/CP things/Problems/CP00014.md",
+    "Code/CP things/Problems/CP00012.md",
+    "Code/CP things/Algorithm logic/Technics/Search",
+    "Learned/2026/Weeks",
+    "ADMIN/IMAGE/Pasted image 20260529171339.png",
+    "Code/CP things/Cách chọn alg phù hợp.canvas",
     "Learned/2026/Jun/Week24",
     "Learned/2026/Jun/Week23",
     "Learned/2026/Jun/Week 22",
     "Learned/2026/Jun",
     "Learned/2026",
     "Learned",
-    "ADMIN/Learned/2026/Jun/Week23/Fr 05-06-2026.md",
-    "ADMIN/Learned/2026/Jun/Week23/Week 23.md",
-    "ADMIN/Learned/2026/Jun/Week23/Su 07-06-2026.md",
-    "ADMIN/Learned/2026/Jun/Week23/Sa 06-06-2026.md",
-    "ADMIN/Learned/2026/Jun/Week 22/Week 22.md",
     "ADMIN/Learned/2026/Jun/Week24",
     "ADMIN/Learned/2026/Jun/Week23",
-    "ADMIN/Learned/2026/Jun/Week 22",
-    "ADMIN/Learned/2026/Jun",
-    "README.md",
-    "Code/CP things/Cách chọn alg phù hợp.canvas",
-    "Code/CP things/Algorithm logic/Cpp/Cpp some DS  STL.md",
-    "ADMIN/skibidi.md",
-    "English/1 số cách để học.md",
-    "ADMIN/Undone.md",
-    "ADMIN/Rules.md",
-    "Code/CP things/Problems/CP00015.md",
-    "ADMIN/TEMPLATE/CPproblem.md",
-    "Math/Modulo/Số học modulo.md",
-    "Code/CP things/Problems/CP00014.md",
-    "Code/CP things/Problems/CP00013.md",
-    "Code/CP things/Problems/CP00001.md",
-    "Code/CP things/Problems/CP00012.md",
-    "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
-    "Code/CP things/Algorithm logic/Technics/Brute Force.md",
-    "Code/CP things/Algorithm logic/Technics/Backtrack/Backtrack.md",
     "ADMIN/IMAGE/z7781434839987_e6e7f9e2214c960f0c9aef5be3b2896d.jpg",
     "ADMIN/IMAGE/Pasted image 20260529203905.png",
     "ADMIN/IMAGE/z7781434852204_145fb1ba84d91f5e178441d2b927e7e2.jpg",
@@ -300,7 +367,6 @@
     "ADMIN/IMAGE/Pasted image 20260529203103.png",
     "ADMIN/IMAGE/Pasted image 20260529202904.png",
     "ADMIN/IMAGE/Pasted image 20260518145944.png",
-    "ADMIN/IMAGE/Pasted image 20260529171339.png",
     "Code/CP things/Bug thường gặp.canvas",
     "Code/Algorithm logic/Choose Algorithm.canvas"
   ]

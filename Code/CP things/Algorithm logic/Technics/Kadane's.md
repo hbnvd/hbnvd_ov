@@ -1,4 +1,8 @@
-#DSA/Sub-array #DSA/Kadane
+---
+tags:
+- "#DSA/Kadane"
+---
+
 
 - Tính tổng của 1 mảng con lớn nhất có/không chọn mảng rỗng. Nếu không chọn mảng rỗng thì nó là [[CP00005]] á;)).
 

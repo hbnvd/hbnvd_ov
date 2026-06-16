@@ -6,10 +6,10 @@ tags:
 
 
 - Mảng cộng dồn & mảng hiệu
-- 1 cấu trúc dữ liệu chuyển tốc độ truy vấn tính tổng, hiệu 1 đoạn con lên O(1)
+- 1 cấu trúc dữ liệu chuyển tốc độ truy vấn tính tổng 1 đoạn con lên O(1), và Q truy vấn cập nhật đoạn với O(n)
 
 ---
-- Nguồn
+- **Nguồn**
 	- https://wiki.vnoi.info/algo/data-structures/prefix-sum-and-difference-array.md
 	- https://codeforces.com/blog/entry/78762
 ---
@@ -40,8 +40,8 @@ $$D_i=A_i-A_{i-1}$$
 - Từ một mảng $A$ bất kỳ, ta sinh được vô hạn mảng cộng dồn $S(c ,A)$ từ $A$. Tuy nhiên, các mảng cộng dồn này chỉ khác nhau ở giá trị $c$ được chọn.
 - Cũng với mảng $A$ đó, ta sinh được **một và chỉ một** mảng hiệu $D(A)$ từ $A$.
 ## Liên hệ giữa mảng cộng dồn và mảng hiệu
-$$S(A_0,D(A))=A \space\space\space\space(1)$$
-$$D(S(c, A)) = A\space\space\space\space(2)$$
+$$S(A_0,D(A))=A \tag{1}$$
+$$D(S(c, A)) = A\tag {2}$$
 - $(2)$ hiệu nghiệm với mọi $c$ thực
 # III. Ứng dụng
 ## Prefix Sum
@@ -56,6 +56,7 @@ $$D(S(c, A)) = A\space\space\space\space(2)$$
 - Chứng minh toán học pro vip trên vnoi wiki
 ![[Pasted image 20260529204937.png]]
 
+1 số bài:
 0. [[CP00004]]
 1. [[CP00005]]
 ## Difference Array
@@ -70,7 +71,7 @@ $$D(S(c, A)) = A\space\space\space\space(2)$$
 
 0. [[CP00003]]
 # IV. Mảng nhiều chiều
-- Lười viết tiếp vl;))
-
+- Lười làm vaiz, lên vnoi đi;))
+ https://wiki.vnoi.info/algo/data-structures/prefix-sum-and-difference-array.md
 # Bug hay gặp
 - [[CP00005]] - nên khởi tạo mn\[0] = 0

@@ -3,7 +3,7 @@ tags:
   - "#DSA/DS/Sparse-table"
 ---
 **Bảng thưa**
-- Là 1 cấu trúc dữ liệu để giải quyết các truy vấn thông thường trên 1 tập dữ liệu tĩnh với $O(logn)$ và các truy vấn **lũy đẳng (Idempotence) (min, max, gcd, lcm, bitwise, ...) với $O(1)$**
+- Là 1 cấu trúc dữ liệu để giải quyết các truy vấn thông thường trên 1 tập dữ liệu tĩnh với $O(logn)$ và các truy vấn **lũy đẳng (Idempotence) (min, max, gcd, lcm, AND, OR) với $O(1)$**
 %% Cuối chapter có so sánh với segment tree (cả 2 điều dự trên khái niệm lũy thừa của 2)%%
 
 **Tài liệu tham khảo**
