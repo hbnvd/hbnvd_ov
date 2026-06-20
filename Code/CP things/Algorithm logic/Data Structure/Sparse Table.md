@@ -20,6 +20,13 @@ tags:
 - Làm vậy liên tục cho tới tầng thứ $\lfloor \log_2(n) \rfloor$ 
 
 - Công thức **khởi tạo** sparse table (sp), tầng là $i$, cột là $j$, truy vấn là min $$sp[i][j]=\min(sp[i-1][j],sp[i-1][j+2^{i-1}])$$
+- **Ranh giới để khởi tạo** là:
+$$
+\begin{aligned}
+for \space i&: [1,\lfloor \log_2{N} \rfloor \space ] \\
+&for \space j:[1,n-2^i+1]
+\end {aligned}
+$$
 - Công thức **truy vấn $O(1)$** cho truy vấn lũy đẳng trong đoạn $[l,r]$, $k=\lfloor \log_2(r-l+1) \rfloor$
 
 $$min(l,r)=min(sp[k][l], sp[k][r-2^k+1]$$
@@ -51,7 +58,7 @@ int k = __lg(r-l+1); // (int)log2(r-l+1)
 cout << min(sp[k][l], sp[k][r-(1<<k)+1]) << "\n";
 ```
 
-%% Còn với truy vấn không lũy đẵng (sum, ..) thì ummm, đi học segment tree đi;) %%
+%% Còn với truy vấn không lũy đẵng (sum, ..) hoặc truy vấn cập nhật đoạn thì ummm, đi học segment tree đi;) %%
 
 # Bài tập
 - https://cses.fi/problemset/task/1647/

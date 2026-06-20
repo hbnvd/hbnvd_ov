@@ -119,7 +119,7 @@ Là cấu trúc dữ liệu mảng động nhưng được tối ưu để có t
 
 ## Priority Queue
 
-Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nhất nằm ở đỉnh (mặc định là phần tử lớn nhất). Bản chất bên dưới của nó được cài đặt bằng cấu trúc **Max-Heap (Cây nhị phân hoàn chỉnh)** lưu trên mảng phẳng.
+Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nhất nằm ở đỉnh (mặc định là phần tử lớn nhất). Bản chất bên dưới của nó được cài đặt bằng cấu trúc **Heap (Cây nhị phân hoàn chỉnh)** lưu trên mảng phẳng.
 
 | **Cách gọi** | **Công dụng**                | **Cách nó hoạt động**                                                                                                                                                              | **Độ phức tạp** |
 | ------------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
@@ -127,7 +127,7 @@ Cấu trúc dữ liệu luôn giữ cho phần tử có "độ ưu tiên" cao nh
 | `.push(x)`   | Thêm phần tử và sắp xếp      | Thêm `x` vào cuối mảng (đáy Heap), sau đó thực hiện quá trình sàng lên (`sift-up` / `heapify-up`) bằng cách so sánh và đổi chỗ với nút cha cho đến khi đúng vị trí.                | $O(\log N)$     |
 | `.pop()`     | Xóa phần tử ưu tiên cao nhất | Tráo đổi phần tử ở đỉnh Heap với phần tử cuối cùng ở đáy, loại bỏ phần tử cuối đó đi. Sau đó thực hiện sàng xuống (`sift-down` / `heapify-down`) từ đỉnh để tái cấu trúc lại Heap. | $O(\log N)$     |
 | `.empty()`   | Kiểm tra hàng đợi rỗng       | Kiểm tra xem kích thước mảng biểu diễn Heap bên dưới có bằng 0 hay không.                                                                                                          | $O(1)$          |
-| `.size()`              | trả về kích thước           | y như vector                                                                                                      | $O(1)$          |
+| `.size()`    | trả về kích thước            | y như vector                                                                                                                                                                       | $O(1)$          |
 
 ## List 
 
@@ -168,7 +168,7 @@ Khác với [[Cpp some DS  STL#I. Các DS, .method() của nó#3. Map|Map]] (d�
 | `.count(key)`   | Kiểm tra key có tồn tại hay không | Băm `key` và kiểm tra xem tại vị trí bucket tương ứng có phần tử nào trùng key không. Trả về 1 nếu có, 0 nếu không.                           | $O(1)$ trung bình<br><br>$O(N)$ tệ nhất |
 | `.find(key)`    | Tìm và lấy con trỏ (iterator)     | Băm `key` để tìm kiếm phần tử. Nếu tìm thấy, trả về iterator trỏ đến vị trí đó; nếu duyệt hết bucket vẫn không có, trả về `.end()`.           | $O(1)$ trung bình<br><br>$O(N)$ tệ nhất |
 | `.reserve(n)`   | Cấp phát sớm $n$ phần tử          | Yêu cầu bảng băm chuẩn bị sẵn số lượng bucket đủ cho $n$ phần tử, giúp hạn chế việc cấu trúc lại bảng băm (rehash) khi thêm phần tử liên tục. | $O(N)$                                  |
-## 2. Unordered Set
+	## 2Unordered Set
 
 Cấu trúc lưu trữ các phần tử độc nhất (không trùng lặp) và không có bất kỳ thứ tự sắp xếp nào.
 
