@@ -10,7 +10,6 @@
     "highTextContrast": false
   },
   "knownTags": {
-    "algorithm": 15,
     "code": 5,
     "concept": 2,
     "cptags": 12,
@@ -19,7 +18,6 @@
     "math": 3,
     "time": 16,
     "vector": 1,
-    "algorithm/dynaminc-programming": 1,
     "cptags/back-track": 20,
     "cptags/binary": 3,
     "cptags/binary-search": 9,
@@ -60,7 +58,7 @@
     "math/graph-theory": 2,
     "math/modulo": 3,
     "time/2026": 1,
-    "cptags/dp-bitmask/dp-brokenprofile": 1,
+    "cptags/dp/dp-bitmask": 1,
     "dsa/ds/dequeue": 1,
     "dsa/ds/different-array": 19,
     "dsa/ds/list": 12,
@@ -78,7 +76,9 @@
     "time/2026/jun": 1,
     "time/2026/w23": 3,
     "time/2026/w24": 2,
-    "time/2026/w25": 4
+    "time/2026/w25": 4,
+    "time/2026/w26": 5,
+    "cptags/dp/dp-bitmask/dp-brokenprofile": 1
   },
   "tagColors": {},
   "_version": 4

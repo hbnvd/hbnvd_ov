@@ -1,4 +1,4 @@
-#DSA/dynaminc-programming #DSA/bitwise #DSA/dp-bitmask #concept 
+#DSA/Dynaminc-programming #DSA/bitwise #DSA/Dp-bitmask 
 
 
 - 1 dạng của [[Dynamic Programming]] chuyên về lưu giữ trạng thái đã chọn

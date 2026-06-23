@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Problems/CP00020.md",
+                "file": "Code/CP things/Problems/CP00026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CP00020"
-            }
-          },
-          {
-            "id": "9262aedac80cb2a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learned/2026/Jun/Sa 20-06-2026.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sa 20-06-2026"
+              "title": "CP00026"
             }
           },
           {
@@ -55,30 +41,39 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ADMIN/Undone.md",
+                "file": "Learned/2026/Jun/Tu 23-06-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Undone"
+              "title": "Tu 23-06-2026"
             }
           },
           {
-            "id": "1d1ffdbceb965cbf",
+            "id": "3ea3a8ccc6df369b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+                "file": "English/1 số cách để học.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Backtrack"
+              "title": "1 số cách để học"
+            }
+          },
+          {
+            "id": "c5c3205bd3c3643d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:time/2026/w24",
+                "query": "tag:#CPtags/DP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,13 +191,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+                "file": "Code/CP things/Problems/CP00026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Backtrack"
+              "title": "Outline of CP00026"
             }
           },
           {
@@ -259,7 +254,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+                "file": "Learned/2026/Jun/Su 21-06-2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +264,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Backtrack"
+              "title": "Backlinks for Su 21-06-2026"
             }
           },
           {
@@ -291,7 +286,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 295.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -305,35 +300,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "1d1ffdbceb965cbf",
+  "active": "389f36eb3661d464",
   "lastOpenFiles": [
-    "English/1 số cách để học.md",
-    "Learned/2026/Jun/Sa 20-06-2026.md",
     "ADMIN/skibidi.md",
+    "Code/CP things/Problems/CP00026.md",
+    "Code/CP things/Problems/CP00025.md",
+    "Learned/2026/Jun/Tu 23-06-2026.md",
+    "ADMIN/IMAGE/Pasted image 20260518145944.png",
+    "ADMIN/TEMPLATE/DailyNote.md",
+    "Learned/2026/Weeks/Week 25.md",
+    "English/1 số cách để học.md",
+    "ADMIN/Undone.md",
+    "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
+    "Learned/2026/Jun/Mo 22-06-2026.md",
+    "Learned/2026/Weeks/Week 26.md",
+    "Learned/2026/Weeks/Week 24.md",
+    "Learned/2026/Jun/Su 21-06-2026.md",
+    "Code/CP things/Problems/CP00022.md",
+    "Code/CP things/Problems/CP00023.md",
+    "Code/CP things/Problems/CP00024.md",
+    "Code/CP things/Problems/CP00021.md",
+    "Code/CP things/Problems/CP00002.md",
+    "ADMIN/TEMPLATE/CPproblem.md",
+    "obsi.md",
+    "Code/CP things/Algorithm logic/Technics/Dynamic Programming/Dynamic Programming.md",
+    "Code/CP things/Algorithm logic/Technics/Dynamic Programming/DP bitmask.md",
+    "Code/CP things/Problems/CP00020.md",
+    "Learned/2026/Jun/Sa 20-06-2026.md",
     "Learned/2026/Jun/Fr 19-06-2026.md",
     "Code/CP things/Algorithm logic/Technics/Two pointers.md",
-    "Code/CP things/Algorithm logic/Technics/Recursion/Backtrack.md",
-    "Code/CP things/Algorithm logic/Technics/Sliding window.md",
-    "Code/CP things/Algorithm logic/Technics/Meet in the middle.md",
-    "Code/CP things/Algorithm logic/Technics/Brute Force.md",
-    "Code/CP things/Algorithm logic/Technics/Kadane's.md",
-    "Code/CP things/Algorithm logic/Technics/Binary search.md",
-    "ADMIN/Undone.md",
-    "Code/CP things/Algorithm logic/Data Structure/Sparse Table.md",
-    "Code/CP things/Problems/CP00020.md",
-    "Code/CP things/Problems/CP00017.md",
-    "Learned/2026/Weeks/Week 25.md",
-    "Code/CP things/Algorithm logic/Cpp/Cpp some DS  STL.md",
     "Code/CP things/Algorithm logic/Technics/Sort",
-    "Learned/2026/Jun/Th 18-06-2026.md",
-    "Learned/2026/Jun/We 17-06-2026.md",
-    "Code/CP things/Problems/CP00007.md",
-    "Code/CP things/Problems/CP00019.md",
-    "Code/CP things/Problems/CP00018.md",
-    "Learned/2026/Jun/Tu 16-06-2026.md",
-    "Code/CP things/Problems/CP00012.md",
-    "Code/CP things/Problems/CP00008.md",
-    "Code/CP things/Algorithm logic/Technics/Recursion/Recursion.md",
     "Code/CP things/Algorithm logic/Technics/Search",
     "Learned/2026/Weeks",
     "ADMIN/IMAGE/Pasted image 20260529171339.png",
@@ -353,7 +349,6 @@
     "ADMIN/IMAGE/Pasted image 20260529203850.png",
     "ADMIN/IMAGE/Pasted image 20260529203103.png",
     "ADMIN/IMAGE/Pasted image 20260529202904.png",
-    "ADMIN/IMAGE/Pasted image 20260518145944.png",
     "Code/CP things/Bug thường gặp.canvas",
     "Code/Algorithm logic/Choose Algorithm.canvas"
   ]
